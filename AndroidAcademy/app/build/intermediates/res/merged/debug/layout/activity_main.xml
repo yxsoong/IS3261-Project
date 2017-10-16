@@ -9,15 +9,17 @@
     tools:context="com.yxsoong.project.androidacademy.MainActivity">
 
 
-    <Button
-        android:id="@+id/button"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/Lesson1" />
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/Lesson2" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/mainLayout1">
+        </FrameLayout>
+
+    </ScrollView>
 </LinearLayout>
