@@ -19,31 +19,31 @@
             android:id="@+id/lesson1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/Lesson1" />
+            android:text="@string/lesson1" />
 
         <Button
             android:id="@+id/lesson2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/Lesson2" />
+            android:text="@string/lesson2" />
 
         <Button
             android:id="@+id/lesson3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/Lesson3" />
+            android:text="@string/lesson3" />
 
         <Button
             android:id="@+id/lesson4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/Lesson4" />
+            android:text="@string/lesson4" />
 
         <Button
             android:id="@+id/test"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/Test" />
+            android:text="@string/test" />
     </LinearLayout>
 
 </FrameLayout>
