@@ -12,12 +12,12 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        FragmentManager fragmentManager =	getFragmentManager();
+        FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction fragmentTransaction;
 
-        fragmentTransaction =	fragmentManager.beginTransaction();
-        MainViewFragment mainFragment	=	new MainViewFragment();
-        fragmentTransaction.add(R.id.mainLayout1,	mainFragment);
+        fragmentTransaction = fragmentManager.beginTransaction();
+        MainViewFragment mainFragment = new MainViewFragment();
+        fragmentTransaction.add(R.id.mainLayout1, mainFragment);
         fragmentTransaction.commit();
     }
 }
