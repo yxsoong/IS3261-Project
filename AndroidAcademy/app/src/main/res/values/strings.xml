@@ -1,5 +1,16 @@
 <resources>
     <string name="app_name">Android Academy</string>
-    <string name="Lesson1">Lesson 1</string>
-    <string name="Lesson2">Lesson 2</string>
+
+
+    <!--/*Main View Fragment-->
+    <string name="appName">Android Academy</string>
+    <string name="Lesson1">Lesson 1: Layout</string>
+    <string name="Lesson2">Lesson 2: Buttons</string>
+    <string name="Lesson3">Lesson 3: Switching Pages</string>
+    <string name="Lesson4">Lesson 4: Fragments</string>
+    <string name="Test">Test your skills</string>
+
+
+
+
 </resources>
