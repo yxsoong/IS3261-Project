@@ -1,5 +1,29 @@
 [
     {
+        "outputFile": "D:\\Git\\AndroidAcademy\\AndroidAcademy\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 45,
+                    "endOffset": 96
+                },
+                "from": {
+                    "file": "C:\\Users\\User\\.android\\build-cache\\5d3b9ae3b8589eeb383cc02bea757d9849f83aeb\\output\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 229,
+                        "endColumn": 45,
+                        "endOffset": 270
+                    }
+                }
+            }
+        ]
+    },
+    {
         "outputFile": "C:\\Users\\limcl\\Documents\\Year2\\IS3261\\Android Academy\\IS3261-Project\\AndroidAcademy\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
         "map": [
             {
