@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yxsoong.project.androidacademy.Lesson1Activity">
+
+    <TextView
+        android:id="@+id/headerXML"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:text="XML"/>
+
+    <FrameLayout
+        android:id="@+id/xmlFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"></FrameLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <fragment
+            android:id="@+id/paletteFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.yxsoong.project.androidacademy.PaletteFragment"
+            android:layout="@layout/fragment_palette">
+
+        </fragment>
+
+    </HorizontalScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/back"
+        android:onClick="onClick_BackToPreviousActivity"/>
+</LinearLayout>

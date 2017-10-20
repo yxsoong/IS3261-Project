@@ -9,8 +9,10 @@
     <string name="lesson3">Lesson 3: Switching Pages</string>
     <string name="lesson4">Lesson 4: Fragments</string>
     <string name="test">Test your skills</string>
+    <string name="back">Back</string>
 
-
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
