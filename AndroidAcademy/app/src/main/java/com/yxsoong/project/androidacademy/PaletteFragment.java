@@ -5,11 +5,11 @@ import android.content.ClipData;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 
@@ -35,11 +35,15 @@ public class PaletteFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_palette, container, false);
         TextView textView = view.findViewById(R.id.textViewPaletteTV);
         Button button = view.findViewById(R.id.buttonPaletteBtn);
+        ImageView editTextIV = view.findViewById(R.id.editTextPaletteIV);
+        ImageView checkBoxIV = view.findViewById(R.id.checkBoxPaletteIV);
 
         //textView.setOnLongClickListener(longClickListener);
         //button.setOnLongClickListener(longClickListener);
         setLongClick(textView);
         setLongClick(button);
+        setLongClick(editTextIV);
+        setLongClick(checkBoxIV);
 
         return view;
     }
@@ -50,11 +54,11 @@ public class PaletteFragment extends Fragment {
             @Override
             public boolean onLongClick(View v) {
                 Intent intent = new Intent();
-                intent.putExtra("viewType", view.getClass().getName().toString());
+                intent.putExtra("viewType", view.getTag().toString());
                 ClipData data = ClipData.newIntent("myIntent", intent);
-                Log.i("view", data.toString());
+                //Log.i("view", data.toString());
                 View.DragShadowBuilder myShadowBuilder = new View.DragShadowBuilder(v);
-                v.startDrag(data, myShadowBuilder, v, 0);
+                v.startDragAndDrop(data, myShadowBuilder, v, 0);
                 return true;
             }
         });

@@ -1,7 +1,9 @@
 package com.yxsoong.project.androidacademy;
 
 import android.app.Fragment;
+import android.content.ClipData;
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
@@ -10,8 +12,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import java.util.ArrayList;
 
 
 /**
@@ -23,12 +29,21 @@ import android.widget.TextView;
 public class XMLFragment extends Fragment {
 
     private OnFragmentInteractionListener mListener;
+    private LinearLayout linearLayout;
+    private ArrayList<TextView> textViews;
+    private ArrayList<Button> buttons;
+    private ArrayList<EditText> editTexts;
+    private ArrayList<View> views;
 
     public XMLFragment() {
         // Required empty public constructor
+        textViews = new ArrayList<>();
+        buttons = new ArrayList<>();
+        editTexts = new ArrayList<>();
+        views = new ArrayList<>();
     }
 
-    LinearLayout linearLayout;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -38,6 +53,22 @@ public class XMLFragment extends Fragment {
         linearLayout = view.findViewById(R.id.xmlFragmentLayout);
         linearLayout.setOnDragListener(dragListener);
         return view;
+    }
+
+    public void setLongClick(final View view) {
+        view.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                Intent intent = new Intent();
+                intent.putExtra("viewType", view.getTag().toString());
+                intent.putExtra("viewId", view.getId());
+                ClipData data = ClipData.newIntent("myIntent", intent);
+                //Log.i("view", data.toString());
+                View.DragShadowBuilder myShadowBuilder = new View.DragShadowBuilder(v);
+                v.startDragAndDrop(data, myShadowBuilder, v, 0);
+                return true;
+            }
+        });
     }
 
     View.OnDragListener dragListener = new View.OnDragListener(){
@@ -51,17 +82,35 @@ public class XMLFragment extends Fragment {
                 case DragEvent.ACTION_DRAG_EXITED:
                     break;
                 case DragEvent.ACTION_DROP:
-
                     String viewType = event.getClipData().getItemAt(0).getIntent().getStringExtra("viewType");
-                    Log.i("ViewName", viewType);
-                    if(viewType.equalsIgnoreCase("android.widget.TextView")) {
+                    //Log.i("ViewName", viewType);
+                    if(viewType.equalsIgnoreCase("textView")) {
                         TextView textView = new TextView(getActivity());
                         textView.setText("Hello World");
+                        textView.setTag("textView");
+                        textView.setId(textViews.size());
+                        textViews.add(textView);
+                        setLongClick(textView);
+                        Log.i("ID OF TV", "" + textView.getId());
                         linearLayout.addView(textView);
-                    } else if(viewType.equalsIgnoreCase("android.widget.Button")){
+                    } else if(viewType.equalsIgnoreCase("button")){
                         Button button = new Button(getActivity());
                         button.setText("Button");
+                        button.setTag("button");
+                        button.setId(buttons.size());
+                        buttons.add(button);
+                        setLongClick(button);
                         linearLayout.addView(button);
+                    } else if(viewType.equalsIgnoreCase("editText")){
+                        EditText editText = new EditText(getActivity());
+                        editText.setTag("editText");
+                        editText.setId(views.size());
+                        views.add(editText);
+                        linearLayout.addView(editText);
+                    } else if(viewType.equalsIgnoreCase("checkBox")){
+                        CheckBox checkBox = new CheckBox(getActivity());
+                        checkBox.setText("checkbox");
+                        linearLayout.addView(checkBox);
                     }
                     break;
             }
@@ -99,5 +148,25 @@ public class XMLFragment extends Fragment {
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
+    }
+
+    public void removeViews(int viewId, String viewType){
+        if(viewId == -1){
+            Log.i("Error", "error");
+            return;
+        }
+        if(viewType.equalsIgnoreCase("textView")) {
+            TextView textView = textViews.get(viewId);
+            textViews.set(viewId, null);
+            linearLayout.removeView(textView);
+        } else if(viewType.equalsIgnoreCase("button")){
+            Button button = buttons.get(viewId);
+            buttons.set(viewId, null);
+            linearLayout.removeView(button);
+        } else if(viewType.equalsIgnoreCase("editText")){
+            EditText editText = (EditText) views.get(viewId);
+            views.set(viewId, null);
+            linearLayout.removeView(editText);
+        }
     }
 }

@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     tools:context="com.yxsoong.project.androidacademy.XMLFragment">
 
+
     <LinearLayout
         android:id="@+id/xmlFragmentLayout"
         android:layout_width="match_parent"

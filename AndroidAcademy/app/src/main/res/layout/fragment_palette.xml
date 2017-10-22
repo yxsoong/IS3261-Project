@@ -11,31 +11,34 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:background="@color/colorAccent"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:weightSum="1">
         <TextView
             android:id="@+id/textViewPaletteTV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:tag="textView"
             android:text="TextView"/>
         <Button
             android:id="@+id/buttonPaletteBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:tag="button"
             android:text="Button"/>
 
-        <EditText
-            android:id="@+id/editTextPaletteET"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:inputType="none"
-            android:text="EditText"
-            android:textIsSelectable="false" />
-        <CheckBox
-            android:id="@+id/checkBoxPaletteCB"
-            android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/editTextPaletteIV"
+            android:layout_width="115dp"
             android:layout_height="wrap_content"
-            android:inputType="none"
-            android:checked="false"/>
+            android:src="@drawable/edittext"
+            android:tag="editText" />
+
+       <ImageView
+           android:id="@+id/checkBoxPaletteIV"
+           android:layout_width="53dp"
+           android:layout_height="57dp"
+           android:tag="checkBox"
+           android:src="@drawable/checkbox"/>
     </LinearLayout>
 
 </FrameLayout>

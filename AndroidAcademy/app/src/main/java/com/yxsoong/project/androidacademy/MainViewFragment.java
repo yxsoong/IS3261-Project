@@ -27,6 +27,13 @@ public class MainViewFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.main_view, container, false);
+        Button gettingStartedBtn = view.findViewById(R.id.gettingStartedBtn);
+        gettingStartedBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mListener.switchActivity("GettingStartedActivity");
+            }
+        });
         Button lesson1Btn = view.findViewById(R.id.lesson1Btn);
         lesson1Btn.setOnClickListener(new View.OnClickListener() {
             @Override

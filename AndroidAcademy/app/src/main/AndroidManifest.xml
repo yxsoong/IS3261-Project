@@ -16,7 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Lesson1Activity"></activity>
+        <activity android:name=".Lesson1Activity" />
+        <activity android:name=".GettingStartedActivity" />
+        <activity
+            android:name=".CreateProjectActivity"
+            android:label="@string/title_activity_create_project"></activity>
     </application>
 
 </manifest>

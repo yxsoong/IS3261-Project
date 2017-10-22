@@ -13,7 +13,13 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_gravity="center_vertical">
-        
+
+        <Button
+            android:id="@+id/gettingStartedBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/getting_started"/>
+
         <Button
             android:id="@+id/lesson1Btn"
             android:layout_width="match_parent"
@@ -43,6 +49,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/test" />
+
     </LinearLayout>
 
 </FrameLayout>

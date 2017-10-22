@@ -29,10 +29,11 @@ public class MainActivity extends Activity implements MainViewFragment.OnFragmen
     @Override
     public void switchActivity(String activity) {
         Intent myIntent = null;
-        if(activity.equals("Lesson1Activity")){
+        if(activity.equals("GettingStartedActivity")){
+            myIntent = new Intent(this, GettingStartedActivity.class);
+        } else if(activity.equals("Lesson1Activity")) {
             myIntent = new Intent(this, Lesson1Activity.class);
         }
-
         if(myIntent != null)
             startActivity(myIntent);
     }
