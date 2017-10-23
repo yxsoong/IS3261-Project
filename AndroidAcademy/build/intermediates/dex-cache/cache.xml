@@ -2,22 +2,31 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="C:\Users\limcl\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\User\.android\build-cache\9abd209aa531da5d723451391637fd4c119b9c2c\output\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
-        <dex dex="C:\Users\limcl\Documents\Year2\IS3261\Android Academy\IS3261-Project\AndroidAcademy\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.2_d0c7717fdec1f23426e2238235bae75b6b4941a8.jar" />
+        sha1="62f733cc92b1611138da965697f4654cd385e078">
+        <dex dex="D:\Git\AndroidAcademy\AndroidAcademy\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_189214d18c38921ddb8ef34bfeae2f19d306cd85\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\limcl\.android\build-cache\a5f5dece23e1a3705f0c05231cfa644081f9311b\output\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="D:\Git\AndroidAcademy\AndroidAcademy\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
         optimize="true"
         revision="26.0.1"
-        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
-        <dex dex="C:\Users\limcl\Documents\Year2\IS3261\Android Academy\IS3261-Project\AndroidAcademy\app\build\intermediates\pre-dexed\debug\classes_af99e5ec91d85b9a8e2f61cdb99f242549460b14.jar" />
+        sha1="dc73594d333e288b4eff7fb5be94be232c73dab8">
+        <dex dex="D:\Git\AndroidAcademy\AndroidAcademy\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_c94870ca5df1518b12e4b90a792e6cbbb3def374\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Git\AndroidAcademy\AndroidAcademy\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="D:\Git\AndroidAcademy\AndroidAcademy\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_de1a5da9a0ed89b535ac4e3a510b0858e0be2aaa\classes.dex" />
     </item>
 
 </items>

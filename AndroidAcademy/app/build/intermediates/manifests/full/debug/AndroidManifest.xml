@@ -5,8 +5,12 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="21"
+        android:minSdkVersion="24"
         android:targetSdkVersion="26" />
+
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="26.0.0-alpha1" />
 
     <application
         android:allowBackup="true"
@@ -22,6 +26,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.yxsoong.project.androidacademy.Lesson1Activity" />
+        <activity android:name="com.yxsoong.project.androidacademy.GettingStartedActivity" />
+        <activity
+            android:name="com.yxsoong.project.androidacademy.CreateProjectActivity"
+            android:label="@string/title_activity_create_project" />
+        <activity android:name="com.yxsoong.project.androidacademy.Lesson2Activity" />
     </application>
 
 </manifest>

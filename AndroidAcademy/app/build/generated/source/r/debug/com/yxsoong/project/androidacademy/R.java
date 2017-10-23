@@ -458,39 +458,126 @@ containing a value of this type.
         public static final int layout_optimizationLevel=0x7f01002b;
     }
     public static final class color {
-        public static final int colorAccent=0x7f040000;
-        public static final int colorPrimary=0x7f040001;
-        public static final int colorPrimaryDark=0x7f040002;
+        public static final int black=0x7f060000;
+        public static final int colorAccent=0x7f060001;
+        public static final int colorPrimary=0x7f060002;
+        public static final int colorPrimaryDark=0x7f060003;
+        public static final int darkBlue=0x7f060004;
+        public static final int lightGrey=0x7f060005;
+        public static final int snowWhite=0x7f060006;
+    }
+    public static final class dimen {
+        public static final int activity_horizontal_margin=0x7f050000;
+        public static final int activity_vertical_margin=0x7f050001;
+    }
+    public static final class drawable {
+        public static final int checkbox=0x7f020000;
+        public static final int creatnewproject=0x7f020001;
+        public static final int customizeactivity=0x7f020002;
+        public static final int edittext=0x7f020003;
+        public static final int projectcreated=0x7f020004;
+        public static final int selectactivity=0x7f020005;
+        public static final int startupandroidstudio=0x7f020006;
+        public static final int targetandroiddevice=0x7f020007;
     }
     public static final class id {
-        public static final int all=0x7f070005;
-        public static final int basic=0x7f070006;
-        public static final int button=0x7f070009;
-        public static final int button2=0x7f07000a;
-        public static final int chains=0x7f070007;
-        public static final int none=0x7f070008;
-        public static final int packed=0x7f070003;
-        public static final int parent=0x7f070000;
-        public static final int spread=0x7f070001;
-        public static final int spread_inside=0x7f070004;
-        public static final int wrap=0x7f070002;
+        public static final int action_settings=0x7f0a0024;
+        public static final int all=0x7f0a0005;
+        public static final int androidStartIV=0x7f0a0016;
+        public static final int androidTermsBtn=0x7f0a000b;
+        public static final int basic=0x7f0a0006;
+        public static final int buttonPaletteBtn=0x7f0a001a;
+        public static final int chains=0x7f0a0007;
+        public static final int checkBoxPaletteIV=0x7f0a001c;
+        public static final int container=0x7f0a0009;
+        public static final int createNewProjectIV=0x7f0a0017;
+        public static final int createProjectBtn=0x7f0a000c;
+        public static final int editTextPaletteIV=0x7f0a001b;
+        public static final int gettingStartedBtn=0x7f0a001e;
+        public static final int gridViewBtn=0x7f0a0012;
+        public static final int imageView=0x7f0a0018;
+        public static final int introLayoutBtn=0x7f0a000e;
+        public static final int lesson1Btn=0x7f0a001f;
+        public static final int lesson1LinearLayout=0x7f0a000d;
+        public static final int lesson2Btn=0x7f0a0020;
+        public static final int lesson3Btn=0x7f0a0021;
+        public static final int lesson4Btn=0x7f0a0022;
+        public static final int linearLayoutBtn=0x7f0a000f;
+        public static final int listViewBtn=0x7f0a0011;
+        public static final int mainLayout1=0x7f0a0015;
+        public static final int none=0x7f0a0008;
+        public static final int packed=0x7f0a0003;
+        public static final int parent=0x7f0a0000;
+        public static final int relativeLayoutBtn=0x7f0a0010;
+        public static final int spread=0x7f0a0001;
+        public static final int spread_inside=0x7f0a0004;
+        public static final int taskBtn=0x7f0a0014;
+        public static final int testBtn=0x7f0a0023;
+        public static final int textView=0x7f0a000a;
+        public static final int textViewPaletteTV=0x7f0a0019;
+        public static final int widgetsBtn=0x7f0a0013;
+        public static final int wrap=0x7f0a0002;
+        public static final int xmlFragmentLayout=0x7f0a001d;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
+        public static final int activity_create_project=0x7f040000;
+        public static final int activity_getting_started=0x7f040001;
+        public static final int activity_lesson1=0x7f040002;
+        public static final int activity_lesson2=0x7f040003;
+        public static final int activity_main=0x7f040004;
+        public static final int fragment_create_project_tab1=0x7f040005;
+        public static final int fragment_create_project_tab2=0x7f040006;
+        public static final int fragment_create_project_tab3=0x7f040007;
+        public static final int fragment_palette=0x7f040008;
+        public static final int fragment_xml=0x7f040009;
+        public static final int main_view=0x7f04000a;
+    }
+    public static final class menu {
+        public static final int menu_create_project=0x7f090000;
     }
     public static final class mipmap {
-        public static final int ic_launcher=0x7f020000;
-        public static final int ic_launcher_round=0x7f020001;
+        public static final int ic_launcher=0x7f030000;
+        public static final int ic_launcher_round=0x7f030001;
     }
     public static final class string {
-        public static final int Lesson1=0x7f050000;
-        public static final int Lesson2=0x7f050001;
-        public static final int app_name=0x7f050002;
+        public static final int action_settings=0x7f070000;
+        public static final int android_emulator=0x7f070001;
+        public static final int android_manifest=0x7f070002;
+        public static final int android_terms=0x7f070003;
+        public static final int appName=0x7f070004;
+        public static final int app_name=0x7f070005;
+        public static final int back=0x7f070006;
+        public static final int button=0x7f070007;
+        public static final int checkboxes=0x7f070008;
+        public static final int createProject1=0x7f070009;
+        public static final int createProject2=0x7f07000a;
+        public static final int createProject3=0x7f07000b;
+        public static final int createProject4=0x7f07000c;
+        public static final int createProject5=0x7f07000d;
+        public static final int createProject6=0x7f07000e;
+        public static final int create_project=0x7f07000f;
+        public static final int getting_started=0x7f070010;
+        public static final int grid_view=0x7f070011;
+        public static final int hello_blank_fragment=0x7f070012;
+        public static final int intro_layouts=0x7f070013;
+        public static final int lesson1=0x7f070014;
+        public static final int lesson2=0x7f070015;
+        public static final int lesson3=0x7f070016;
+        public static final int lesson4=0x7f070017;
+        public static final int linear_layout=0x7f070018;
+        public static final int list_view=0x7f070019;
+        public static final int pickers=0x7f07001a;
+        public static final int radio_buttons=0x7f07001b;
+        public static final int relative_layout=0x7f07001c;
+        public static final int spinners=0x7f07001d;
+        public static final int task=0x7f07001e;
+        public static final int test=0x7f07001f;
+        public static final int title_activity_create_project=0x7f070020;
+        public static final int toggle_buttons=0x7f070021;
+        public static final int widgets=0x7f070022;
     }
     public static final class style {
-        /**  Customize your theme here. 
-         */
-        public static final int AppTheme=0x7f060000;
+        public static final int AppTheme=0x7f080000;
     }
     public static final class styleable {
         /** Attributes that can be used with a ConstraintLayout_Layout.

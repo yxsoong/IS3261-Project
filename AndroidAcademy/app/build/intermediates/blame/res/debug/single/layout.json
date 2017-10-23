@@ -1,10 +1,50 @@
 [
     {
+        "merged": "D:\\Git\\AndroidAcademy\\AndroidAcademy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_getting_started.xml",
+        "source": "D:\\Git\\AndroidAcademy\\AndroidAcademy\\app\\src\\main\\res\\layout\\activity_getting_started.xml"
+    },
+    {
+        "merged": "D:\\Git\\AndroidAcademy\\AndroidAcademy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_lesson2.xml",
+        "source": "D:\\Git\\AndroidAcademy\\AndroidAcademy\\app\\src\\main\\res\\layout\\activity_lesson2.xml"
+    },
+    {
+        "merged": "D:\\Git\\AndroidAcademy\\AndroidAcademy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_create_project.xml",
+        "source": "D:\\Git\\AndroidAcademy\\AndroidAcademy\\app\\src\\main\\res\\layout\\activity_create_project.xml"
+    },
+    {
+        "merged": "D:\\Git\\AndroidAcademy\\AndroidAcademy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main_view.xml",
+        "source": "D:\\Git\\AndroidAcademy\\AndroidAcademy\\app\\src\\main\\res\\layout\\main_view.xml"
+    },
+    {
         "merged": "D:\\Git\\AndroidAcademy\\AndroidAcademy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
         "source": "D:\\Git\\AndroidAcademy\\AndroidAcademy\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
+        "merged": "D:\\Git\\AndroidAcademy\\AndroidAcademy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_palette.xml",
+        "source": "D:\\Git\\AndroidAcademy\\AndroidAcademy\\app\\src\\main\\res\\layout\\fragment_palette.xml"
+    },
+    {
+        "merged": "D:\\Git\\AndroidAcademy\\AndroidAcademy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_create_project_tab1.xml",
+        "source": "D:\\Git\\AndroidAcademy\\AndroidAcademy\\app\\src\\main\\res\\layout\\fragment_create_project_tab1.xml"
+    },
+    {
         "merged": "C:\\Users\\limcl\\Documents\\Year2\\IS3261\\Android Academy\\IS3261-Project\\AndroidAcademy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
         "source": "C:\\Users\\limcl\\Documents\\Year2\\IS3261\\Android Academy\\IS3261-Project\\AndroidAcademy\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\Git\\AndroidAcademy\\AndroidAcademy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_create_project_tab3.xml",
+        "source": "D:\\Git\\AndroidAcademy\\AndroidAcademy\\app\\src\\main\\res\\layout\\fragment_create_project_tab3.xml"
+    },
+    {
+        "merged": "D:\\Git\\AndroidAcademy\\AndroidAcademy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_lesson1.xml",
+        "source": "D:\\Git\\AndroidAcademy\\AndroidAcademy\\app\\src\\main\\res\\layout\\activity_lesson1.xml"
+    },
+    {
+        "merged": "D:\\Git\\AndroidAcademy\\AndroidAcademy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_xml.xml",
+        "source": "D:\\Git\\AndroidAcademy\\AndroidAcademy\\app\\src\\main\\res\\layout\\fragment_xml.xml"
+    },
+    {
+        "merged": "D:\\Git\\AndroidAcademy\\AndroidAcademy\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_create_project_tab2.xml",
+        "source": "D:\\Git\\AndroidAcademy\\AndroidAcademy\\app\\src\\main\\res\\layout\\fragment_create_project_tab2.xml"
     }
 ]

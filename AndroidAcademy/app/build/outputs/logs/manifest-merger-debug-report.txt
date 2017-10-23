@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Git\AndroidAcademy\AndroidAcademy\app\src\main\AndroidManifest.xml:2:1-21:12
+ADDED from D:\Git\AndroidAcademy\AndroidAcademy\app\src\main\AndroidManifest.xml:2:1-27:12
 	package
 		ADDED from D:\Git\AndroidAcademy\AndroidAcademy\app\src\main\AndroidManifest.xml:3:5-49
 		INJECTED from D:\Git\AndroidAcademy\AndroidAcademy\app\src\main\AndroidManifest.xml
@@ -14,8 +14,15 @@ ADDED from D:\Git\AndroidAcademy\AndroidAcademy\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Git\AndroidAcademy\AndroidAcademy\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Git\AndroidAcademy\AndroidAcademy\app\src\main\AndroidManifest.xml
 application
-ADDED from D:\Git\AndroidAcademy\AndroidAcademy\app\src\main\AndroidManifest.xml:5:5-19:19
+ADDED from D:\Git\AndroidAcademy\AndroidAcademy\app\src\main\AndroidManifest.xml:5:5-25:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\User\.android\build-cache\204ce9882df1c1d71365224a1c2f1eca754f45c4\output\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-v13:26.0.0-alpha1] C:\Users\User\.android\build-cache\9abd209aa531da5d723451391637fd4c119b9c2c\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\User\.android\build-cache\99b47d9156cf496e5b65b60ba6bc3a99b0490f6f\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\User\.android\build-cache\1b9aee9f5cb9eebeb55de33fa7047da374bd4398\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\User\.android\build-cache\53eaac2d4616aba75bc7806a21345ec1ad9945fd\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\User\.android\build-cache\e8a62681bd9b60b5c6d5da212f05558e2a3fb53c\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\User\.android\build-cache\734c57a24dcaffb078635c3ea2fcf0993f07e7e4\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\User\.android\build-cache\0a2692451eb5ca1f14f90b0ea9fe44e9c7c2e17c\output\AndroidManifest.xml:29:5-20
 	android:label
 		ADDED from D:\Git\AndroidAcademy\AndroidAcademy\app\src\main\AndroidManifest.xml:8:9-41
 	android:supportsRtl
@@ -42,12 +49,51 @@ category#android.intent.category.LAUNCHER
 ADDED from D:\Git\AndroidAcademy\AndroidAcademy\app\src\main\AndroidManifest.xml:16:17-77
 	android:name
 		ADDED from D:\Git\AndroidAcademy\AndroidAcademy\app\src\main\AndroidManifest.xml:16:27-74
+activity#com.yxsoong.project.androidacademy.Lesson1Activity
+ADDED from D:\Git\AndroidAcademy\AndroidAcademy\app\src\main\AndroidManifest.xml:19:9-53
+	android:name
+		ADDED from D:\Git\AndroidAcademy\AndroidAcademy\app\src\main\AndroidManifest.xml:19:19-50
+activity#com.yxsoong.project.androidacademy.GettingStartedActivity
+ADDED from D:\Git\AndroidAcademy\AndroidAcademy\app\src\main\AndroidManifest.xml:20:9-60
+	android:name
+		ADDED from D:\Git\AndroidAcademy\AndroidAcademy\app\src\main\AndroidManifest.xml:20:19-57
+activity#com.yxsoong.project.androidacademy.CreateProjectActivity
+ADDED from D:\Git\AndroidAcademy\AndroidAcademy\app\src\main\AndroidManifest.xml:21:9-23:69
+	android:label
+		ADDED from D:\Git\AndroidAcademy\AndroidAcademy\app\src\main\AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from D:\Git\AndroidAcademy\AndroidAcademy\app\src\main\AndroidManifest.xml:22:13-50
+activity#com.yxsoong.project.androidacademy.Lesson2Activity
+ADDED from D:\Git\AndroidAcademy\AndroidAcademy\app\src\main\AndroidManifest.xml:24:9-62
+	android:name
+		ADDED from D:\Git\AndroidAcademy\AndroidAcademy\app\src\main\AndroidManifest.xml:24:19-50
 uses-sdk
 INJECTED from D:\Git\AndroidAcademy\AndroidAcademy\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\User\.android\build-cache\204ce9882df1c1d71365224a1c2f1eca754f45c4\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-v13:26.0.0-alpha1] C:\Users\User\.android\build-cache\9abd209aa531da5d723451391637fd4c119b9c2c\output\AndroidManifest.xml:21:5-23:55
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\User\.android\build-cache\99b47d9156cf496e5b65b60ba6bc3a99b0490f6f\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\User\.android\build-cache\1b9aee9f5cb9eebeb55de33fa7047da374bd4398\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\User\.android\build-cache\53eaac2d4616aba75bc7806a21345ec1ad9945fd\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\User\.android\build-cache\e8a62681bd9b60b5c6d5da212f05558e2a3fb53c\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\User\.android\build-cache\734c57a24dcaffb078635c3ea2fcf0993f07e7e4\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\User\.android\build-cache\0a2692451eb5ca1f14f90b0ea9fe44e9c7c2e17c\output\AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v13:26.0.0-alpha1] C:\Users\User\.android\build-cache\9abd209aa531da5d723451391637fd4c119b9c2c\output\AndroidManifest.xml:23:9-52
 	android:targetSdkVersion
 		INJECTED from D:\Git\AndroidAcademy\AndroidAcademy\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Git\AndroidAcademy\AndroidAcademy\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from D:\Git\AndroidAcademy\AndroidAcademy\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Git\AndroidAcademy\AndroidAcademy\app\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:support-v13:26.0.0-alpha1] C:\Users\User\.android\build-cache\9abd209aa531da5d723451391637fd4c119b9c2c\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\User\.android\build-cache\99b47d9156cf496e5b65b60ba6bc3a99b0490f6f\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\User\.android\build-cache\1b9aee9f5cb9eebeb55de33fa7047da374bd4398\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\User\.android\build-cache\53eaac2d4616aba75bc7806a21345ec1ad9945fd\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\User\.android\build-cache\e8a62681bd9b60b5c6d5da212f05558e2a3fb53c\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\User\.android\build-cache\734c57a24dcaffb078635c3ea2fcf0993f07e7e4\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\User\.android\build-cache\0a2692451eb5ca1f14f90b0ea9fe44e9c7c2e17c\output\AndroidManifest.xml:25:5-27:41
+	android:value
+		ADDED from [com.android.support:support-v13:26.0.0-alpha1] C:\Users\User\.android\build-cache\9abd209aa531da5d723451391637fd4c119b9c2c\output\AndroidManifest.xml:27:9-38
+	android:name
+		ADDED from [com.android.support:support-v13:26.0.0-alpha1] C:\Users\User\.android\build-cache\9abd209aa531da5d723451391637fd4c119b9c2c\output\AndroidManifest.xml:26:9-47
