@@ -33,6 +33,8 @@ public class MainActivity extends Activity implements MainViewFragment.OnFragmen
             myIntent = new Intent(this, GettingStartedActivity.class);
         } else if(activity.equals("Lesson1Activity")) {
             myIntent = new Intent(this, Lesson1Activity.class);
+        } else if(activity.equals("Lesson2Activity")){
+            myIntent = new Intent(this, Lesson2Activity.class);
         }
         if(myIntent != null)
             startActivity(myIntent);

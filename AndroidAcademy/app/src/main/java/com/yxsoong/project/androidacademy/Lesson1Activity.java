@@ -1,16 +1,12 @@
 package com.yxsoong.project.androidacademy;
 
+import android.app.ActionBar;
 import android.app.Activity;
-import android.app.Fragment;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
-import android.net.Uri;
 import android.os.Bundle;
-import android.view.DragEvent;
-import android.view.View;
+import android.view.MenuItem;
 import android.widget.LinearLayout;
 
-public class Lesson1Activity extends Activity implements XMLFragment.OnFragmentInteractionListener, PaletteFragment.OnFragmentInteractionListener{
+public class Lesson1Activity extends Activity{
     LinearLayout linearLayout;
 
     @Override
@@ -18,7 +14,10 @@ public class Lesson1Activity extends Activity implements XMLFragment.OnFragmentI
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lesson1);
 
-        FragmentManager fragmentManager = getFragmentManager();
+        ActionBar actionBar = getActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+
+        /*FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction fragmentTransaction;
 
         fragmentTransaction = fragmentManager.beginTransaction();
@@ -27,13 +26,14 @@ public class Lesson1Activity extends Activity implements XMLFragment.OnFragmentI
         fragmentTransaction.commit();
 
         linearLayout = findViewById(R.id.lesson1LinearLayout);
-        linearLayout.setOnDragListener(dragListener);
+        linearLayout.setOnDragListener(dragListener);*/
     }
 
-    public void onClick_BackToPreviousActivity(View view){
+    public boolean onOptionsItemSelected(MenuItem item){
         finish();
+        return true;
     }
-
+/*
     View.OnDragListener dragListener = new View.OnDragListener(){
 
         @Override
@@ -67,5 +67,5 @@ public class Lesson1Activity extends Activity implements XMLFragment.OnFragmentI
     @Override
     public void onFragmentInteraction(View.OnDragListener dragListener) {
 
-    }
+    }*/
 }

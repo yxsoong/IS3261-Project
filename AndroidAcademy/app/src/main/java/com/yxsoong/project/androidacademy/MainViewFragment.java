@@ -42,6 +42,14 @@ public class MainViewFragment extends Fragment {
             }
         });
 
+        Button lesson2Btn = view.findViewById(R.id.lesson2Btn);
+        lesson2Btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mListener.switchActivity("Lesson2Activity");
+            }
+        });
+
         return view;
     }
 

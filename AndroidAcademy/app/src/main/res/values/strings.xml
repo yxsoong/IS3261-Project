@@ -2,17 +2,45 @@
     <string name="app_name">Android Academy</string>
 
 
+    <string name="task">Task</string>
+
     <!--/*Main View Fragment-->
     <string name="appName">Android Academy</string>
-    <string name="lesson1">Lesson 1: Layout</string>
-    <string name="lesson2">Lesson 2: Buttons</string>
+    <string name="getting_started">Getting Started</string>
+    <string name="lesson1">Lesson 1: User Interface</string>
+    <string name="lesson2">Lesson 2: Input Controls</string>
     <string name="lesson3">Lesson 3: Switching Pages</string>
     <string name="lesson4">Lesson 4: Fragments</string>
     <string name="test">Test your skills</string>
     <string name="back">Back</string>
 
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Getting Started Activity-->
+    <string name="android_terms">Android Terms</string>
+    <string name="create_project">Create Project</string>
+    <string name="android_manifest">Android Manifest</string>
+    <string name="android_emulator">Android Emulator</string>
+    <string name="title_activity_create_project">Create New Project </string>
+    <string name="action_settings">Settings</string>
+
+    <!--Lesson 1 Activity-->
+    <string name="intro_layouts">Introduction to Layouts</string>
+    <string name="linear_layout">Linear Layout</string>
+    <string name="relative_layout">Relative Layout</string>
+    <string name="list_view">List View</string>
+    <string name="grid_view">Grid View</string>
+    <string name="widgets">Widgets</string>
+
+    <!--Lesson 2 Input Controls-->
+    <string name="button">Button</string>
+    <string name="checkboxes">Checkboxes</string>
+    <string name="radio_buttons">Radio Buttons</string>
+    <string name="toggle_buttons">Toggle Buttons</string>
+    <string name="spinners">Spinners</string>
+    <string name="pickers">Pickers</string>
 
 
 </resources>

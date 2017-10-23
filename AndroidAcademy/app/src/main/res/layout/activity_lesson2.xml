@@ -5,45 +5,52 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.yxsoong.project.androidacademy.GettingStartedActivity">
-
+    tools:context="com.yxsoong.project.androidacademy.Lesson2Activity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="serif"
-        android:text="@string/getting_started"
+        android:text="@string/lesson2"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="30sp"
         android:textStyle="bold"/>
 
     <Button
-        android:id="@+id/androidTermsBtn"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="@string/android_terms" />
-
-    <Button
-        android:id="@+id/createProjectBtn"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="@string/create_project"
-        android:onClick="onClick_GoToCreateProjectActivity"/>
+        android:layout_height="wrap_content"
+        android:text="@string/button"/>
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="@string/android_manifest"/>
+        android:layout_height="wrap_content"
+        android:text="@string/checkboxes"/>
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="@string/android_emulator"/>
+        android:layout_height="wrap_content"
+        android:text="@string/radio_buttons"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/toggle_buttons"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/spinners"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pickers"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/task"/>
 
 </LinearLayout>
