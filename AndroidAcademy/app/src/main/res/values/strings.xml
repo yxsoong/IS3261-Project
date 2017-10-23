@@ -24,6 +24,12 @@
     <string name="android_manifest">Android Manifest</string>
     <string name="android_emulator">Android Emulator</string>
     <string name="title_activity_create_project">Create New Project </string>
+    <string name="createProject1">1. Start a new android project</string>
+    <string name="createProject2">2. Use the following data for your project</string>
+    <string name="createProject3">3. Select target android device</string>
+    <string name="createProject4">4. Add an activity to mobile. Select empty activity.</string>
+    <string name="createProject5">5. Customize the Activity. Uncheck Backwards Compatibility and click finish.</string>
+    <string name="createProject6">6. Congratulations! You have created your first project!</string>
     <string name="action_settings">Settings</string>
 
     <!--Lesson 1 Activity-->
