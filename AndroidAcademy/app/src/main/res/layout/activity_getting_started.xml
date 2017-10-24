@@ -19,12 +19,7 @@
         android:textSize="30sp"
         android:textStyle="bold"/>
 
-    <Button
-        android:id="@+id/androidTermsBtn"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="@string/android_terms" />
+
 
     <Button
         android:id="@+id/createProjectBtn"
@@ -38,12 +33,20 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:text="@string/android_manifest"/>
+        android:text="@string/android_emulator"
+        android:onClick="onClick_GoToAndroidEmulatorActivity"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:text="@string/android_emulator"/>
+        android:text="@string/android_manifest"/>
+
+    <Button
+        android:id="@+id/androidTermsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/android_terms" />
 
 </LinearLayout>

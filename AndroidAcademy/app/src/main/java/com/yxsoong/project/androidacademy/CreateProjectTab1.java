@@ -11,6 +11,10 @@ import android.view.ViewGroup;
  */
 
 public class CreateProjectTab1 extends Fragment {
+
+    public CreateProjectTab1() {
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

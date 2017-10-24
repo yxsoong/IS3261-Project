@@ -28,4 +28,8 @@ public class GettingStartedActivity extends Activity {
         startActivity(myIntent);
     }
 
+    public void onClick_GoToAndroidEmulatorActivity(View view){
+        Intent myIntent = new Intent(this, AndroidEmulatorActivity.class);
+        startActivity(myIntent);
+    }
 }
