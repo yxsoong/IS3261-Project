@@ -21,7 +21,8 @@
         <activity
             android:name=".CreateProjectActivity"
             android:label="@string/title_activity_create_project" />
-        <activity android:name=".Lesson2Activity"></activity>
+        <activity android:name=".Lesson2Activity" />
+        <activity android:name=".AndroidEmulatorActivity"></activity>
     </application>
 
 </manifest>
