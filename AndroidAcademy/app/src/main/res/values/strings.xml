@@ -30,6 +30,8 @@
     <string name="createProject4">4. Add an activity to mobile. Select empty activity.</string>
     <string name="createProject5">5. Customize the Activity. Uncheck Backwards Compatibility and click finish.</string>
     <string name="createProject6">6. Congratulations! You have created your first project!</string>
+    <string name="setting_up_android_emulator">Setting up Android Emulator</string>
+    <string name="avd_manager">An Android Virtual Device (AVD) is a configuration that defines the characteristics of an Android phone, tablet, Android Wear, or Android TV device that you want to simulate in the Android Emulator. The AVD Manager is an interface you can launch from Android Studio that helps you create and manage AVDs.</string>
     <string name="action_settings">Settings</string>
 
     <!--Lesson 1 Activity-->
