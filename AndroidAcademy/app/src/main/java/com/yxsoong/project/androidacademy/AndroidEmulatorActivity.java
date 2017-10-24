@@ -50,6 +50,9 @@ public class AndroidEmulatorActivity extends Activity {
                 case 1:
                     AndroidEmulatorTab2 tab2 = new AndroidEmulatorTab2();
                     return tab2;
+                case 2:
+                    AndroidEmulatorTab3 tab3 = new AndroidEmulatorTab3();
+                    return tab3;
                 default:
                     return null;
             }
@@ -59,7 +62,7 @@ public class AndroidEmulatorActivity extends Activity {
         @Override
         public int getCount() {
             // Show 3 total pages.
-            return 2;
+            return 3;
         }
 
 
