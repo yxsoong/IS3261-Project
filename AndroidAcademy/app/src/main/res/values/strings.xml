@@ -50,5 +50,10 @@
     <string name="spinners">Spinners</string>
     <string name="pickers">Pickers</string>
 
+    <!--Lesson 3 Android Manifest-->
+    <string name="introManifest1">Button</string>
+
+    <!--Lesson 4 Android Terms-->
+
 
 </resources>
