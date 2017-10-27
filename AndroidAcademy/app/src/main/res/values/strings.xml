@@ -51,8 +51,21 @@
     <string name="pickers">Pickers</string>
 
     <!--Lesson 3 Android Manifest-->
-    <string name="introManifest1">Button</string>
-
+    <string name="introManifest1">What is AndroidManifest?</string>
+    <string name="introManifest2">File that provides essential information about your app on the Android System. The system
+requires these information before it can run any app code.</string>
+    <string name="introManifest3">These are the information presented in Android Manifest:</string>
+    <string name="introManifest4">1. Java Package Name </string>
+    <string name="introManifest5">The package name serves as a unique identifier for the application.</string>
+    <string name="introManifest6">2.Components of the Application. </string>
+    <string name="introManifest7">Includes activities, services, broadcast receivers, and content providers that compose the application.</string>
+    <string name="introManifest8">It also names the classes that implement these components and publishes their capabilities. These declarations inform the Android system of the components how they can be launched.</string>
+    <string name="introManifest9">3. Processes that host the application components.</string>
+    <string name="introManifest10">4. Permissions to access protected parts of the API and interact with other applications. </string>
+    <string name="introManifest11">It also declares the permissions that others are required to have in order to interact with the applications components.</string>
+    <string name="introManifest12">5. List of Instrumentation classes that provide profiling and other information as the application runs.</string>
+    <string name="introManifest13">6.Minimum required level of the Android API</string>
+    <string name="introManifest14">7.List of libraries</string>
     <!--Lesson 4 Android Terms-->
 
 
