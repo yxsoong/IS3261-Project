@@ -2,12 +2,8 @@ package com.yxsoong.project.androidacademy;
 
 
 import android.app.Fragment;
-import android.graphics.Color;
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.text.SpannableString;
-import android.text.style.ForegroundColorSpan;
-import android.text.style.StyleSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -40,7 +36,7 @@ public class AndroidManifestTab1 extends Fragment {
         TextView introManifest2 = view.findViewById(manifestIntro2);
         introManifest2.setText(ss1);
 
-        words = "To open AVD Manager, go to Tools > Android > AVD Manger";
+        /*words = "To open AVD Manager, go to Tools > Android > AVD Manger";
         ss1 = new SpannableString(words);
         ss1.setSpan(new ForegroundColorSpan(Color.BLUE),27,32,0);
         ss1.setSpan(new ForegroundColorSpan(Color.BLUE),35,42,0);
@@ -53,7 +49,7 @@ public class AndroidManifestTab1 extends Fragment {
         ss1 = new SpannableString(words);
         ss1.setSpan(new StyleSpan(Typeface.BOLD),6,27,0);
         TextView clickOnCreateTV = view.findViewById(R.id.clickOnCreateTV);
-        clickOnCreateTV.setText(ss1);
+        clickOnCreateTV.setText(ss1);*/
 
         return view;
     }
