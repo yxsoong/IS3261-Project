@@ -22,11 +22,11 @@
         android:layout_width="match_parent"
         android:layout_height="10dp" />
 
-    <ImageView
+    <com.github.chrisbanes.photoview.PhotoView
         android:id="@+id/androidStartIV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scaleType="fitStart"
+        android:scaleType="fitCenter"
         android:src="@drawable/startupandroidstudio" />
 
     <Space
@@ -42,7 +42,7 @@
         android:textColor="@color/black" />
 
     <!-- change this to hello world image -->
-    <ImageView
+    <com.github.chrisbanes.photoview.PhotoView
         android:id="@+id/createNewProjectIV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

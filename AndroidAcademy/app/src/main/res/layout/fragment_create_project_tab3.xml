@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="5dp" />
 
-    <ImageView
+    <com.github.chrisbanes.photoview.PhotoView
         android:layout_width="match_parent"
         android:layout_height="223dp"
         android:src="@drawable/customizeactivity" />
@@ -39,7 +39,7 @@
         android:text="@string/createProject6"
         android:textColor="@color/black"/>
 
-    <ImageView
+    <com.github.chrisbanes.photoview.PhotoView
         android:layout_width="match_parent"
         android:layout_height="213dp"
         android:src="@drawable/projectcreated" />

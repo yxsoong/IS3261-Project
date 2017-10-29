@@ -9,23 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Lesson1Activity" />
-        <activity android:name=".GettingStartedActivity" />
+        <activity android:name=".Lesson1Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".GettingStartedActivity" android:screenOrientation="portrait"/>
         <activity
             android:name=".CreateProjectActivity"
-            android:label="@string/title_activity_create_project" />
-        <activity android:name=".Lesson2Activity" />
-        <activity android:name=".AndroidEmulatorActivity" />
-        <activity android:name=".AndroidManifestActivity" />
-        <activity android:name=".AndroidTermsActivity" />
-        <activity android:name=".LinearLayoutActivity"></activity>
+            android:label="@string/title_activity_create_project"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Lesson2Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".AndroidEmulatorActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".AndroidManifestActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".AndroidTermsActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".LinearLayoutActivity" android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>
