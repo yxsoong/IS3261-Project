@@ -27,7 +27,7 @@ import java.util.ArrayList;
  * to handle interaction events.
  */
 public class XMLFragment extends Fragment {
-
+    private static String KEY = "orientation";
     private OnFragmentInteractionListener mListener;
     private LinearLayout linearLayout;
     private ArrayList<TextView> textViews;
@@ -43,14 +43,15 @@ public class XMLFragment extends Fragment {
         views = new ArrayList<>();
     }
 
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_xml, container, false);
         linearLayout = view.findViewById(R.id.xmlFragmentLayout);
+        Bundle bundle = getArguments();
+        if(bundle.getString(KEY).equals("horizontal"))
+            linearLayout.setOrientation(LinearLayout.HORIZONTAL);
         linearLayout.setOnDragListener(dragListener);
         return view;
     }
@@ -148,6 +149,11 @@ public class XMLFragment extends Fragment {
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
+    }
+
+    public void removeAllViews(){
+        linearLayout.removeAllViews();
+        views = new ArrayList<>();
     }
 
     public void removeViews(int viewId, String viewType){

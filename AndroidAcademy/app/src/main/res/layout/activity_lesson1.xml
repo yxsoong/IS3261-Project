@@ -29,7 +29,8 @@
         android:id="@+id/linearLayoutBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/linear_layout"/>
+        android:text="@string/linear_layout"
+        android:onClick="onClick_GoToLinearLayoutActivity"/>
 
     <Button
         android:id="@+id/relativeLayoutBtn"

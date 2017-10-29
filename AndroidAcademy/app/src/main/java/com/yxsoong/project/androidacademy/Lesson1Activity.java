@@ -2,8 +2,10 @@ package com.yxsoong.project.androidacademy;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.LinearLayout;
 
 public class Lesson1Activity extends Activity {
@@ -32,6 +34,11 @@ public class Lesson1Activity extends Activity {
     public boolean onOptionsItemSelected(MenuItem item){
         finish();
         return true;
+    }
+
+    public void onClick_GoToLinearLayoutActivity(View view){
+        Intent myIntent = new Intent(this, LinearLayoutActivity.class);
+        startActivity(myIntent);
     }
 
     /*View.OnDragListener dragListener = new View.OnDragListener(){
