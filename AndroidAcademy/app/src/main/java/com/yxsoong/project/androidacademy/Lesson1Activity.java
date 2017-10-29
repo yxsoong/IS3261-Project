@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.LinearLayout;
 
-public class Lesson1Activity extends Activity{
+public class Lesson1Activity extends Activity {
     LinearLayout linearLayout;
 
     @Override
@@ -33,8 +33,8 @@ public class Lesson1Activity extends Activity{
         finish();
         return true;
     }
-/*
-    View.OnDragListener dragListener = new View.OnDragListener(){
+
+    /*View.OnDragListener dragListener = new View.OnDragListener(){
 
         @Override
         public boolean onDrag(View v, DragEvent event) {

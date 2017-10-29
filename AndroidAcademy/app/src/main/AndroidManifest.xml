@@ -24,7 +24,8 @@
         <activity android:name=".Lesson2Activity" />
         <activity android:name=".AndroidEmulatorActivity" />
         <activity android:name=".AndroidManifestActivity" />
-        <activity android:name=".AndroidTermsActivity"></activity>
+        <activity android:name=".AndroidTermsActivity" />
+        <activity android:name=".LinearLayoutActivity"></activity>
     </application>
 
 </manifest>
