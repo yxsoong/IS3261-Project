@@ -9,9 +9,22 @@
     tools:context="com.yxsoong.project.androidacademy.CreateProjectActivity"
     android:weightSum="1">
 
+    <TextView
+        android:id="@+id/pageNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|center"
+        android:layout_alignParentBottom="true"
+        android:text="3 of 3"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="9sp"
+        android:textStyle="bold" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_above="@id/pageNumber"
         android:orientation="vertical">
 
         <TextView
@@ -48,16 +61,5 @@
             android:layout_height="213dp"
             android:src="@drawable/projectcreated" />
     </LinearLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="bottom|center"
-        android:layout_alignParentBottom="true"
-        android:text="3 of 3"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="9sp"
-        android:textStyle="bold" />
 
 </RelativeLayout>

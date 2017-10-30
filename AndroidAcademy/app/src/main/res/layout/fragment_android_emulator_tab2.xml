@@ -35,30 +35,29 @@
         android:fontFamily="serif"
         android:text="Under verify configuration"/>
 
-    <LinearLayout
+    <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="168dp"
-            android:layout_weight="4"
-            android:scaleType="fitCenter"
-            android:src="@drawable/avdmanagerconfiguration" />
+        <TableRow>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="168dp"
+                android:layout_weight="4"
+                android:scaleType="fitCenter"
+                android:src="@drawable/avdmanagerconfiguration" />
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_weight="1"
                 android:fontFamily="serif"
                 android:textColor="@color/black"
                 android:text="Change AVD properties as needed."/>
-        </LinearLayout>
+        </TableRow>
 
-    </LinearLayout>
+
+    </TableLayout>
 
 
 
