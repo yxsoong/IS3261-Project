@@ -36,8 +36,13 @@ public class GettingStartedActivity extends Activity {
         Intent myIntent = new Intent(this, AndroidManifestActivity.class);
         startActivity(myIntent);
     }
-    public void onClick_GoToAndroidTermsActivity(View view){
-        Intent myIntent = new Intent(this, AndroidTermsActivity.class);
+    public void onClick_GoToWidgetsActivity(View view){
+        Intent myIntent = new Intent(this, WidgetsActivity.class);
+        startActivity(myIntent);
+    }
+
+    public void onClick_GoToTaskActivity(View view){
+        Intent myIntent = new Intent(this, GettingStartedTaskActivity.class);
         startActivity(myIntent);
     }
 }

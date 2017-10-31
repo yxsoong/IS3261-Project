@@ -48,7 +48,15 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:text="@string/android_terms"
-        android:onClick="onClick_GoToAndroidTermsActivity"/>
+        android:text="@string/widgets"
+        android:onClick="onClick_GoToWidgetsActivity"/>
+
+    <Button
+        android:id="@+id/taskBtn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/task"
+        android:onClick="onClick_GoToTaskActivity"/>
 
 </LinearLayout>
