@@ -33,6 +33,7 @@
     <string name="setting_up_android_emulator">Setting up Android Emulator</string>
     <string name="avd_manager">An Android Virtual Device (AVD) is a configuration that defines the characteristics of an Android phone, tablet, Android Wear, or Android TV device that you want to simulate in the Android Emulator. The AVD Manager is an interface you can launch from Android Studio that helps you create and manage AVDs.</string>
     <string name="action_settings">Settings</string>
+    <string name="getting_started_task">Task: Create a new project called MyAndroidTasks and change the text so that it looks like the one below</string>
 
     <!--Lesson 1 Activity-->
     <string name="intro_layouts">Introduction to Layouts</string>
