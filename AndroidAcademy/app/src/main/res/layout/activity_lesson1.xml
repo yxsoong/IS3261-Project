@@ -16,7 +16,7 @@
         android:text="@string/lesson1"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="30sp"
+        android:textSize="25sp"
         android:textStyle="bold"/>
 
     <Button
@@ -49,12 +49,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/grid_view"/>
-
-    <Button
-        android:id="@+id/widgetsBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/widgets"/>
 
     <Button
         android:id="@+id/taskBtn"
