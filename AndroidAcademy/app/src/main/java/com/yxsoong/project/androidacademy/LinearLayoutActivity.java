@@ -7,11 +7,14 @@ import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.DragEvent;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
 public class LinearLayoutActivity extends Activity implements XMLFragment.OnFragmentInteractionListener, PaletteFragment.OnFragmentInteractionListener{
+    private static String ORIENTAION_KEY = "orientation";
+    private static String LAYOUT_KEY = "layoutType";
     Fragment verticalFragment, horizontalFragment;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,13 +28,15 @@ public class LinearLayoutActivity extends Activity implements XMLFragment.OnFrag
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
         Bundle bundle = new Bundle();
+        bundle.putString("layoutType", "linearLayout");
         bundle.putString("orientation", "vertical");
         verticalFragment = new XMLFragment();
         verticalFragment.setArguments(bundle);
         fragmentTransaction.add(R.id.frameLayoutVertical, verticalFragment);
 
         bundle = new Bundle();
-        bundle.putString("orientation", "horizontal");
+        bundle.putString(LAYOUT_KEY, "linearLayout");
+        bundle.putString(ORIENTAION_KEY, "horizontal");
         horizontalFragment = new XMLFragment();
         horizontalFragment.setArguments(bundle);
         fragmentTransaction.add(R.id.frameLayoutHorizontal, horizontalFragment);
@@ -46,12 +51,39 @@ public class LinearLayoutActivity extends Activity implements XMLFragment.OnFrag
                 ((XMLFragment)horizontalFragment).removeAllViews();
             }
         });
+
+        View view = findViewById(R.id.container);
+        view.setOnDragListener(dragListener);
     }
 
     public boolean onOptionsItemSelected(MenuItem item){
         finish();
         return true;
     }
+
+    View.OnDragListener dragListener = new View.OnDragListener(){
+
+        @Override
+        public boolean onDrag(View v, DragEvent event) {
+            int dragEvent = event.getAction();
+            View dragView = (View) event.getLocalState();
+            switch (dragEvent){
+                case DragEvent.ACTION_DRAG_ENTERED:
+                    break;
+                case DragEvent.ACTION_DRAG_EXITED:
+                    break;
+                case DragEvent.ACTION_DROP:
+                    int dragViewId = ((View)dragView.getParent().getParent()).getId();
+                    if(verticalFragment.getId() == dragViewId)
+                        ((XMLFragment)verticalFragment).removeViews(dragView.getId());
+                    else if(horizontalFragment.getId() == dragViewId)
+                        ((XMLFragment)horizontalFragment).removeViews(dragView.getId());
+                    break;
+
+            }
+            return true;
+        }
+    };
 
     @Override
     public void onFragmentInteraction(View.OnDragListener dragListener) {

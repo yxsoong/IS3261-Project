@@ -3,7 +3,6 @@ package com.yxsoong.project.androidacademy;
 import android.app.Fragment;
 import android.content.ClipData;
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -38,17 +37,19 @@ public class PaletteFragment extends Fragment {
         ImageView editTextIV = view.findViewById(R.id.editTextPaletteIV);
         ImageView checkBoxIV = view.findViewById(R.id.checkBoxPaletteIV);
 
-        //textView.setOnLongClickListener(longClickListener);
-        //button.setOnLongClickListener(longClickListener);
-        setLongClick(textView);
-        setLongClick(button);
-        setLongClick(editTextIV);
-        setLongClick(checkBoxIV);
+        textView.setOnLongClickListener(longClickListener);
+        button.setOnLongClickListener(longClickListener);
+        editTextIV.setOnLongClickListener(longClickListener);
+        checkBoxIV.setOnLongClickListener(longClickListener);
+//        setLongClick(textView);
+//        setLongClick(button);
+//        setLongClick(editTextIV);
+//        setLongClick(checkBoxIV);
 
         return view;
     }
 
-    public void setLongClick(final View view) {
+    /*public void setLongClick(final View view) {
         final View finalView = view;
         view.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
@@ -62,7 +63,18 @@ public class PaletteFragment extends Fragment {
                 return true;
             }
         });
-    }
+    }*/
+
+    View.OnLongClickListener longClickListener = new View.OnLongClickListener(){
+
+        @Override
+        public boolean onLongClick(View v) {
+            View.DragShadowBuilder myShadowBuilder = new View.DragShadowBuilder(v);
+            ClipData data = ClipData.newPlainText("label", "text");;
+            v.startDragAndDrop(data, myShadowBuilder, v, 0);
+            return true;
+        }
+    };
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
