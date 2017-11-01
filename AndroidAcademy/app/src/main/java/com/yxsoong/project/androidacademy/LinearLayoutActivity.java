@@ -5,7 +5,6 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.DragEvent;
 import android.view.MenuItem;
@@ -90,8 +89,12 @@ public class LinearLayoutActivity extends Activity implements XMLFragment.OnFrag
 
     }
 
-    @Override
-    public void onFragmentInteraction(Uri uri) {
 
+    @Override
+    public void removeViewForOtherFragment(int myFragmentId, int viewId) {
+        if(verticalFragment.getId() == myFragmentId)
+            ((XMLFragment)horizontalFragment).removeViews(viewId);
+        else if(horizontalFragment.getId() == myFragmentId)
+            ((XMLFragment)verticalFragment).removeViews(viewId);
     }
 }

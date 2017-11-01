@@ -3,7 +3,6 @@ package com.yxsoong.project.androidacademy;
 import android.app.Fragment;
 import android.content.ClipData;
 import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.DragEvent;
@@ -27,6 +26,7 @@ import android.widget.TextView;
 public class XMLFragment extends Fragment {
     private static String ORIENTAION_KEY = "orientation";
     private static String LAYOUT_KEY = "layoutType";
+    private static String TAG = "fragmentXML";
     private OnFragmentInteractionListener mListener;
     private LinearLayout linearLayout;
 
@@ -44,7 +44,8 @@ public class XMLFragment extends Fragment {
         if(bundle.getString(LAYOUT_KEY).equals("linearLayout")) {
             linearLayout = new LinearLayout(getContext());
             linearLayout.setId(View.generateViewId());
-            linearLayout.setBackgroundColor(getResources().getColor(R.color.lightGrey));
+            linearLayout.setBackgroundResource(R.color.lightGrey);
+            linearLayout.setTag(TAG);
             LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
             layoutParams.setMargins(10,10,10,10);
             if(bundle.getString(ORIENTAION_KEY).equals("horizontal"))
@@ -95,11 +96,30 @@ public class XMLFragment extends Fragment {
                 case DragEvent.ACTION_DRAG_EXITED:
                     break;
                 case DragEvent.ACTION_DROP:
-                    int dragViewParentId = ((View)dragView.getParent()).getId();
+                    /*int dragViewParentId = ((View)dragView.getParent()).getId();
                     if(dragViewParentId == linearLayout.getId()){
                         break;
+                    }*/
+
+                    String dragViewParentTag = ((View) dragView.getParent()).getTag().toString();
+
+                    if(dragViewParentTag.equals(TAG)){
+                        int dragViewParentId = ((View)dragView.getParent()).getId();
+                        if(dragViewParentId == linearLayout.getId()){
+                            break;
+                        }
+                        int parentId = ((View) linearLayout.getParent()).getId();
+                        mListener.removeViewForOtherFragment(parentId, dragView.getId());
                     }
-                    if(dragView instanceof Button) {
+
+
+                    if(dragView instanceof CheckBox) {
+                        CheckBox checkBox = new CheckBox(getActivity());
+                        checkBox.setText("checkbox");
+                        checkBox.setId(View.generateViewId());
+                        checkBox.setOnLongClickListener(longClickListener);
+                        linearLayout.addView(checkBox);
+                    } else if(dragView instanceof Button) {
                         Button button = new Button(getActivity());
                         button.setText("Button");
                         button.setId(View.generateViewId());
@@ -118,6 +138,11 @@ public class XMLFragment extends Fragment {
                             checkBox.setOnLongClickListener(longClickListener);
                             linearLayout.addView(checkBox);
                         }
+                    } else if(dragView instanceof EditText) {
+                        EditText editText = new EditText(getActivity());
+                        editText.setId(View.generateViewId());
+                        editText.setOnLongClickListener(longClickListener);
+                        linearLayout.addView(editText);
                     } else if(dragView instanceof TextView) {
                         TextView textView = new TextView(getActivity());
                         textView.setText("Hello World");
@@ -190,7 +215,7 @@ public class XMLFragment extends Fragment {
      */
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
-        void onFragmentInteraction(Uri uri);
+        void removeViewForOtherFragment(int myFragmentId, int viewId);
     }
 
     public void removeAllViews(){

@@ -70,7 +70,7 @@ public class PaletteFragment extends Fragment {
         @Override
         public boolean onLongClick(View v) {
             View.DragShadowBuilder myShadowBuilder = new View.DragShadowBuilder(v);
-            ClipData data = ClipData.newPlainText("label", "text");;
+            ClipData data = ClipData.newPlainText("label", "text");
             v.startDragAndDrop(data, myShadowBuilder, v, 0);
             return true;
         }
