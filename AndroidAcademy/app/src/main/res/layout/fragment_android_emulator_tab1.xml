@@ -37,18 +37,19 @@
         android:textAllCaps="false"
         android:textColor="@color/black" />
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="5dp" />
-
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="12sp"
         android:fontFamily="serif"
         android:text="@string/avd_manager"
         android:textAllCaps="false"
-        android:textColor="@color/black" />
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
 
     <Space
         android:layout_width="match_parent"
@@ -58,20 +59,21 @@
         android:id="@+id/openAVDTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="12sp"
         android:fontFamily="serif"
         android:textAllCaps="false"
-        android:textColor="@color/black" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="168dp"
-        android:scaleType="fitStart"
-        android:src="@drawable/avdmanager" />
+        android:textColor="@color/black"
+        android:textSize="12sp" />
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="10dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/avd_manager" />
 
     <TextView
         android:id="@+id/clickOnCreateTV"
@@ -90,7 +92,7 @@
                 android:layout_height="168dp"
                 android:layout_weight="4"
                 android:scaleType="fitCenter"
-                android:src="@drawable/avdmangerselectdevice" />
+                android:src="@drawable/avd_deviceconfig" />
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"

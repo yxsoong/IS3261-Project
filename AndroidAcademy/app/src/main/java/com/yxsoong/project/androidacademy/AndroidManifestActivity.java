@@ -53,6 +53,9 @@ public class AndroidManifestActivity extends Activity {
                 case 1:
                     AndroidManifestTab2 tab2 = new AndroidManifestTab2();
                     return tab2;
+                case 2:
+                    AndroidManifestTab3 tab3 = new AndroidManifestTab3();
+                    return tab3;
 
                 default:
                     return null;
@@ -62,7 +65,7 @@ public class AndroidManifestActivity extends Activity {
 
         @Override
         public int getCount() {
-            return 2;
+            return 3;
         }
 
 
