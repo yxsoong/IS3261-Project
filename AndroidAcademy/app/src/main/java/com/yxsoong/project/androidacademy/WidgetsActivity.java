@@ -63,6 +63,12 @@ public class WidgetsActivity extends Activity {
                 case 5:
                     WidgetTab6 tab6 = new WidgetTab6();
                     return tab6;
+                case 6:
+                    WidgetTab7 tab7 = new WidgetTab7();
+                    return tab7;
+                case 7:
+                    WidgetTab8 tab8 = new WidgetTab8();
+                    return tab8;
 
                 default:
                     return null;
@@ -72,7 +78,7 @@ public class WidgetsActivity extends Activity {
 
         @Override
         public int getCount() {
-            return 6;
+            return 8;
         }
 
 

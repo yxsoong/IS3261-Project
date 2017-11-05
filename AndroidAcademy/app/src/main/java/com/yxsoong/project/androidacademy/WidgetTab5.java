@@ -12,7 +12,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import static com.yxsoong.project.androidacademy.R.id.widget6;
-import static com.yxsoong.project.androidacademy.R.id.widget7;
 
 
 /**
@@ -40,13 +39,7 @@ public class WidgetTab5 extends Fragment {
         TextView widgetText3 = view.findViewById(widget6);
         widgetText3.setText(ss1);
 
-        words = "Let's try to edit the words shown through the TextView widget." +
-                "First, open the Strings library in Res/Values/Strings." +
-                "You should be able to see a line of code in the Strings.xml file.";
-        ss1 = new SpannableString(words);
-        ss1.setSpan(new ForegroundColorSpan(Color.BLUE),90,184,0);
-        TextView widgetText6 = view.findViewById(widget7);
-        widgetText6.setText(ss1);
+
 
 
 
