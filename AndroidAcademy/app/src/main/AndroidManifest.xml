@@ -45,7 +45,8 @@
             android:name=".LinearLayoutActivity"
             android:screenOrientation="portrait" />
         <activity android:name=".WidgetsActivity" />
-        <activity android:name=".GettingStartedTaskActivity"></activity>
+        <activity android:name=".GettingStartedTaskActivity" />
+        <activity android:name=".LayoutIntroduction"></activity>
     </application>
 
 </manifest>

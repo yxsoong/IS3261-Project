@@ -16,22 +16,47 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.yxsoong.project.androidacademy.MainActivity" >
+        <activity
+            android:name="com.yxsoong.project.androidacademy.MainActivity"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.yxsoong.project.androidacademy.Lesson1Activity" />
-        <activity android:name="com.yxsoong.project.androidacademy.GettingStartedActivity" />
+        <activity
+            android:name="com.yxsoong.project.androidacademy.Lesson1Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yxsoong.project.androidacademy.GettingStartedActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.yxsoong.project.androidacademy.CreateProjectActivity"
-            android:label="@string/title_activity_create_project" />
-        <activity android:name="com.yxsoong.project.androidacademy.Lesson2Activity" />
+            android:label="@string/title_activity_create_project"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yxsoong.project.androidacademy.Lesson2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yxsoong.project.androidacademy.AndroidEmulatorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yxsoong.project.androidacademy.AndroidManifestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yxsoong.project.androidacademy.AndroidTermsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yxsoong.project.androidacademy.LinearLayoutActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.yxsoong.project.androidacademy.WidgetsActivity" />
+        <activity android:name="com.yxsoong.project.androidacademy.GettingStartedTaskActivity" />
+        <activity android:name="com.yxsoong.project.androidacademy.LayoutIntroduction" />
     </application>
 
 </manifest>
