@@ -42,7 +42,7 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/linearlayout.png" />
+            android:src="@drawable/linearlayout"/>
 
         <ImageView
             android:layout_width="match_parent"
@@ -54,7 +54,7 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/relativelayout.png" />
+            android:src="@drawable/relativelayout" />
 
         <ImageView
             android:layout_width="match_parent"
@@ -66,7 +66,7 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/webview.png" />
+            android:src="@drawable/webview" />
 
         </TableRow>
 
@@ -82,7 +82,7 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/gridview.png" />
+            android:src="@drawable/gridview" />
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -93,7 +93,7 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/listview.png" />
+            android:src="@drawable/listview" />
 
 
     </TableRow>
