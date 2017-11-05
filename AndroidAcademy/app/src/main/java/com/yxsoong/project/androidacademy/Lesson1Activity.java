@@ -41,6 +41,11 @@ public class Lesson1Activity extends Activity {
         startActivity(myIntent);
     }
 
+    public void onClick_GoToLayoutIntroduction(View view){
+        Intent myIntent = new Intent(this, LayoutIntroduction.class);
+        startActivity(myIntent);
+    }
+
     /*View.OnDragListener dragListener = new View.OnDragListener(){
 
         @Override

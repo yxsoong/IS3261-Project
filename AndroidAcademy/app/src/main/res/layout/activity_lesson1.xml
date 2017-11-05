@@ -23,7 +23,8 @@
         android:id="@+id/introLayoutBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/intro_layouts"/>
+        android:text="@string/intro_layouts"
+        android:onClick="onClick_GoToLayoutIntroduction"/>
 
     <Button
         android:id="@+id/linearLayoutBtn"
