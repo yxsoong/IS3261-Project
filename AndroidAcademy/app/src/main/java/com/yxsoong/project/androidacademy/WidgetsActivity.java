@@ -23,7 +23,7 @@ public class WidgetsActivity extends Activity {
         mSectionsPagerAdapter = new SectionsPagerAdapter(getFragmentManager());
 
         // Set up the ViewPager with the sections adapter.
-        mViewPager = (ViewPager) findViewById(R.id.container);
+        mViewPager = findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
         ActionBar actionBar = getActionBar();
