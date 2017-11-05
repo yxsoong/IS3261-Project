@@ -1,69 +1,76 @@
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.yxsoong.project.androidacademy.WidgetTab1">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TableRow
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_height="match_parent"
+        tools:context="com.yxsoong.project.androidacademy.WidgetTab1">
+
+        <!-- TODO: Update blank fragment layout -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
 
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:layout_weight="1"
-            android:layout_gravity="center"
-            android:scaleType="centerInside"
-            android:src="@drawable/android_robot_question_mark" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:src="@drawable/android_robot_question_mark" />
 
-        <TextView
-            android:id="@+id/widget1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginStart="20dp"
-            android:layout_weight="3" />
+            <TextView
+                android:id="@+id/widget1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_weight="3" />
 
-    </TableRow>
+        </TableRow>
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:src="@drawable/widgets11" />
 
-        <TextView
-            android:id="@+id/widget2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginStart="20dp"
-            android:layout_weight="3" />
+            <TextView
+                android:id="@+id/widget2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_weight="3" />
 
-    </TableRow>
-
-
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
-
-
-        <TextView
-            android:id="@+id/widget3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginStart="20dp"
-            android:layout_weight="3" />
-
-    </TableRow>
+        </TableRow>
 
 
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/widgets1" />
+
+
+    </TableRow>>
 
 
 
-</TableLayout>
+
+
+
+
+
+    </TableLayout>
