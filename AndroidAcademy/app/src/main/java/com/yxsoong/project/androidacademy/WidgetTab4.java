@@ -11,16 +11,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import static com.yxsoong.project.androidacademy.R.id.widget4;
+import static com.yxsoong.project.androidacademy.R.id.widget5;
 
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class WidgetTab3 extends Fragment {
+public class WidgetTab4 extends Fragment {
 
 
-    public WidgetTab3() {
+    public WidgetTab4() {
         // Required empty public constructor
     }
 
@@ -29,13 +29,13 @@ public class WidgetTab3 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_widget_tab3, container, false);
+        View view = inflater.inflate(R.layout.fragment_widget_tab4, container, false);
 
-        String words = "You should see a preview of what the app looks on an android device once the app is run. \n" +
-                "We can find the available widgets on the top left of the edit panel. ";
+        String words = "Click and drag the bottom left corner of the widget list to get a clearer view of the widgets.\n" +
+                "To use a widget, simply click and drag the widget onto the screen display.";
         SpannableString ss1 = new SpannableString(words);
-        ss1.setSpan(new ForegroundColorSpan(Color.BLUE),87,159,0);
-        TextView widgetText3 = view.findViewById(widget4);
+        ss1.setSpan(new ForegroundColorSpan(Color.BLUE),94,169,0);
+        TextView widgetText3 = view.findViewById(widget5);
         widgetText3.setText(ss1);
 
         return view;

@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.yxsoong.project.androidacademy.WidgetTab2">
+    tools:context="com.yxsoong.project.androidacademy.WidgetTab4">
 
     <TableRow
         android:layout_width="match_parent"
@@ -17,7 +17,7 @@
             android:src="@drawable/widgets11" />
 
         <TextView
-            android:id="@+id/widget3"
+            android:id="@+id/widget5"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -29,18 +29,22 @@
 
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_marginTop="10dp">
 
-        <ImageView
+        <com.github.chrisbanes.photoview.PhotoView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_weight="1"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/widgets2" />
-
-
+            android:src="@drawable/widgets4" />
     </TableRow>
+
+
 
 </TableLayout>

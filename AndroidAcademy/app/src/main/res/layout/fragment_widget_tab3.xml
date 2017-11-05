@@ -1,13 +1,50 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.yxsoong.project.androidacademy.WidgetTab3">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/widgets11" />
+
+        <TextView
+            android:id="@+id/widget4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_weight="4" />
+
+    </TableRow>
+
+
+    <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_marginTop="10dp">
 
-</FrameLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/widgets3" />
+
+
+    </TableRow>
+
+</TableLayout>
