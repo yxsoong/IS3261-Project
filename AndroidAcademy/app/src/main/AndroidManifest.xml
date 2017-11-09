@@ -21,9 +21,11 @@
         </activity>
         <activity
             android:name=".Lesson1Activity"
+            android:label="@string/lesson1"
             android:screenOrientation="portrait" />
         <activity
             android:name=".GettingStartedActivity"
+            android:label="@string/getting_started"
             android:screenOrientation="portrait" />
         <activity
             android:name=".CreateProjectActivity"
@@ -31,22 +33,32 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".Lesson2Activity"
+            android:label="@string/lesson2"
             android:screenOrientation="portrait" />
         <activity
             android:name=".AndroidEmulatorActivity"
+            android:label="@string/setting_up_android_emulator"
             android:screenOrientation="portrait" />
         <activity
             android:name=".AndroidManifestActivity"
+            android:label="@string/android_manifest"
             android:screenOrientation="portrait" />
         <activity
             android:name=".AndroidTermsActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".LinearLayoutActivity"
+            android:label="@string/linear_layout"
             android:screenOrientation="portrait" />
-        <activity android:name=".WidgetsActivity" />
-        <activity android:name=".GettingStartedTaskActivity" />
-        <activity android:name=".LayoutIntroduction"></activity>
+        <activity android:name=".WidgetsActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/widgets"/>
+        <activity android:name=".GettingStartedTaskActivity"
+            android:label="@string/task"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".LayoutIntroduction"
+            android:label="@string/intro_layouts"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
