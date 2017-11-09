@@ -189,10 +189,10 @@ public class XMLFragment extends Fragment {
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        if (context instanceof OnFragmentInteractionListener) {
-            mListener = (OnFragmentInteractionListener) context;
+        if (getParentFragment() instanceof OnFragmentInteractionListener) {
+            mListener = (OnFragmentInteractionListener) getParentFragment();
         } else {
-            throw new RuntimeException(context.toString()
+            throw new RuntimeException(getParentFragment().toString()
                     + " must implement OnFragmentInteractionListener");
         }
     }
