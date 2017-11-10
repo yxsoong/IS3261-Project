@@ -1,5 +1,6 @@
 package com.yxsoong.project.androidacademy;
 
+
 import android.app.ActionBar;
 import android.app.Activity;
 import android.app.Fragment;
@@ -12,27 +13,29 @@ import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class GettingStartedTaskActivity extends Activity implements ActionBar.TabListener{
+public class Lesson1TaskActivity extends Activity implements ActionBar.TabListener {
+
+    /**
+     * The {@link android.support.v4.view.PagerAdapter} that will provide
+     * fragments for each of the sections. We use a
+     * {@link FragmentPagerAdapter} derivative, which will keep every
+     * loaded fragment in memory. If this becomes too memory intensive, it
+     * may be best to switch to a
+     * {@link android.support.v13.app.FragmentStatePagerAdapter}.
+     */
     private SectionsPagerAdapter mSectionsPagerAdapter;
+
+    /**
+     * The {@link ViewPager} that will host the section contents.
+     */
     private ViewPager mViewPager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_getting_started_task);
-
-        /*ActionBar actionBar = getActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
-
-        String task = getResources().getString(R.string.getting_started_task);
-
-        SpannableString ss1 = new SpannableString(task);
-        ss1.setSpan(new ForegroundColorSpan(Color.BLUE), 34, 48, 0);
-        ss1.setSpan(new StyleSpan(Typeface.BOLD), 34, 48, 0);
-        ss1.setSpan(new StyleSpan(Typeface.BOLD), 0, 4, 0);
-        TextView textView = findViewById(R.id.taskTV);
-
-        textView.setText(ss1);*/
-
+        setContentView(R.layout.activity_lesson1_task);
+        // Create the adapter that will return a fragment for each of the three
+        // primary sections of the activity.
         mSectionsPagerAdapter = new SectionsPagerAdapter(getFragmentManager());
 
         // Set up the ViewPager with the sections adapter.
@@ -112,6 +115,12 @@ public class GettingStartedTaskActivity extends Activity implements ActionBar.Ta
     public void onTabReselected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
     }
 
+
+
+    /**
+     * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
+     * one of the sections/tabs/pages.
+     */
     public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
         public SectionsPagerAdapter(FragmentManager fm) {
@@ -122,10 +131,10 @@ public class GettingStartedTaskActivity extends Activity implements ActionBar.Ta
         public Fragment getItem(int position) {
             switch (position){
                 case 0:
-                    GettingStartedTaskInstructionsFragment tab1 = new GettingStartedTaskInstructionsFragment();
+                    Lesson1TaskInstructionsFragment tab1 = new Lesson1TaskInstructionsFragment();
                     return tab1;
                 case 1:
-                    GettingStartedTaskExampleFragment tab2 = new GettingStartedTaskExampleFragment();
+                    Lesson1TaskExampleFragment tab2 = new Lesson1TaskExampleFragment();
                     return tab2;
 
                 default:
@@ -135,6 +144,7 @@ public class GettingStartedTaskActivity extends Activity implements ActionBar.Ta
 
         @Override
         public int getCount() {
+            // Show 3 total pages.
             return 2;
         }
 

@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,7 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.yxsoong.project.androidacademy.LinearLayoutTab1">
+    tools:context="com.yxsoong.project.androidacademy.LinearLayoutTab2">
 
     <TextView
         android:id="@+id/pageNumber"
@@ -25,113 +23,56 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/linearLayoutContainer"
         android:layout_above="@id/pageNumber"
         android:orientation="vertical">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:fontFamily="serif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Using vertical linear layout"
             android:textColor="@color/black"
-            android:layout_marginBottom="5dp"
-            android:text="LinearLayout is a view group that aligns all children in a single direction, vertically or horizontally"/>
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:textSize="22sp"/>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:fontFamily="serif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="For this exercise, we will be using the Hello World project we created."
             android:textColor="@color/black"
-            android:layout_marginBottom="10dp"
-            android:text="Try dragging widgets into the view groups"/>
+            android:textSize="14sp"/>
 
-        <TableLayout
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your activity_main.xml should look something like this.\n(it's okay if it's not)"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
 
+        <com.github.chrisbanes.photoview.PhotoView
+            android:id="@+id/photoView1"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="12"
-            android:paddingLeft="@dimen/activity_horizontal_margin"
-            android:paddingRight="@dimen/activity_horizontal_margin"
-            android:paddingTop="@dimen/activity_vertical_margin"
-            android:background="@drawable/rectangle">
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/linearlayoutlesson1" />
 
-            <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change ConstaintLayout to LinearLayout. Delete those striked out in red."
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:textSize="14sp"/>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:fontFamily="serif-monospace"
-                    android:text="@string/try_me"
-                    android:textAlignment="center"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="@color/tryMe"
-                    android:textSize="25sp"
-                    android:textStyle="bold" />
-            </TableRow>
+        <com.github.chrisbanes.photoview.PhotoView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:adjustViewBounds="false"
+            android:scaleType="centerCrop"
+            android:src="@drawable/linearlayoutlesson2" />
 
-            <TableRow>
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="serif"
-                    android:textColor="@color/black"
-                    android:textSize="10sp"
-                    android:gravity="center"
-                    android:text="Vertical Linear Layout"/>
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="serif"
-                    android:textColor="@color/black"
-                    android:textSize="10sp"
-                    android:gravity="center"
-                    android:text="Horizontal Linear Layout"/>
-            </TableRow>
-            <TableRow>
-                <FrameLayout
-                    android:id="@+id/frameLayoutVertical"
-                    android:layout_width="0dp"
-                    android:layout_height="250dp"
-                    android:layout_weight="1" />
-
-                <FrameLayout
-                    android:id="@+id/frameLayoutHorizontal"
-                    android:layout_width="0dp"
-                    android:layout_height="250dp"
-                    android:layout_weight="1" />
-            </TableRow>
-            <TableRow>
-                <HorizontalScrollView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1">
-                    <fragment
-                        android:id="@+id/fragmentPalette"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:name="com.yxsoong.project.androidacademy.PaletteFragment"
-                        android:layout="@layout/fragment_palette" />
-                </HorizontalScrollView>
-
-
-            </TableRow>
-            <TableRow>
-                <Button
-                    android:id="@+id/clearAllBtn"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Clear All"/>
-            </TableRow>
-        </TableLayout>
     </LinearLayout>
-
-
 
 </RelativeLayout>

@@ -37,12 +37,17 @@ public class Lesson1Activity extends Activity {
     }
 
     public void onClick_GoToLinearLayoutActivity(View view){
-        Intent myIntent = new Intent(this, LinearLayoutActivity.class);
+        Intent myIntent = new Intent(this, LinearLayoutTryMeActivity.class);
         startActivity(myIntent);
     }
 
     public void onClick_GoToLayoutIntroduction(View view){
         Intent myIntent = new Intent(this, LayoutIntroduction.class);
+        startActivity(myIntent);
+    }
+
+    public void onClick_GoToLesson1TaskActivity(View view){
+        Intent myIntent = new Intent(this, Lesson1TaskActivity.class);
         startActivity(myIntent);
     }
 

@@ -1,0 +1,157 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.yxsoong.project.androidacademy.Lesson1TaskActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="serif"
+            android:layout_marginBottom="10dp"
+            android:text="1. Use LinearLayout (or any layouts you prefer)"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="serif"
+            android:layout_marginBottom="10dp"
+            android:text="2. Drag and drop a TextView into the layout"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:paddingLeft="15dp"
+            android:fontFamily="serif"
+            android:layout_marginBottom="10dp"
+            android:text="2.1 Change the text to 'My Android Academy App'"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:paddingLeft="15dp"
+            android:fontFamily="serif"
+            android:layout_marginBottom="10dp"
+            android:text="2.2 Size of the text: 30sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="serif"
+            android:paddingLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="2.3 Text Colour: @color/colorPrimary"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="serif"
+            android:layout_marginBottom="10dp"
+            android:text="3. Drag and drop a TextView into the layout"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:paddingLeft="15dp"
+            android:fontFamily="serif"
+            android:layout_marginBottom="10dp"
+            android:text="2.1 Change the text to 'Name'"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:paddingLeft="15dp"
+            android:fontFamily="serif"
+            android:layout_marginBottom="10dp"
+            android:text="2.2 Size of the text: 24sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="serif"
+            android:paddingLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="2.3 Text Colour: #000000 (black)"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="serif"
+            android:layout_marginBottom="10dp"
+            android:text="3. Drag and drop EditText into the layout"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:paddingLeft="15dp"
+            android:fontFamily="serif"
+            android:layout_marginBottom="10dp"
+            android:text="3.1 Edit hint to 'Enter name'"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:paddingLeft="15dp"
+            android:fontFamily="serif"
+            android:layout_marginBottom="10dp"
+            android:text="3.2 Size of the text: 18sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="serif"
+            android:paddingLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="3.3 Text Colour: #FF0000 (red)"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="serif"
+            android:layout_marginBottom="10dp"
+            android:text="4. Drag and drop a Button into the layout"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:paddingLeft="15dp"
+            android:fontFamily="serif"
+            android:layout_marginBottom="10dp"
+            android:text="4.1 Edit text to 'Enter'"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="serif"
+            android:layout_marginBottom="10dp"
+            android:text="5. Play around with margin and padding to make your app look like the app in the Example page"/>
+    </LinearLayout>
+
+
+
+
+</ScrollView>

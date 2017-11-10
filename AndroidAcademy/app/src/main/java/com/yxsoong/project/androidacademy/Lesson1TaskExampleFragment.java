@@ -11,10 +11,10 @@ import android.view.ViewGroup;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class LinearLayoutTab1 extends Fragment {
+public class Lesson1TaskExampleFragment extends Fragment {
 
 
-    public LinearLayoutTab1() {
+    public Lesson1TaskExampleFragment() {
         // Required empty public constructor
     }
 
@@ -23,7 +23,7 @@ public class LinearLayoutTab1 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_linear_layout_tab1, container, false);
+        return inflater.inflate(R.layout.fragment_lesson1_task_example, container, false);
     }
 
 }

@@ -18,6 +18,8 @@ public class LinearLayoutActivity extends Activity{
 
     private ViewPager mViewPager;
 
+    //private LinearLayoutTab1 tab1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +51,9 @@ public class LinearLayoutActivity extends Activity{
         @Override
         public Fragment getItem(int position) {
             switch (position) {
+//                case 0:
+//                    tab1 = new LinearLayoutTab1();
+//                    return tab1;
                 case 0:
                     LinearLayoutTab1 tab1 = new LinearLayoutTab1();
                     return tab1;
@@ -56,7 +61,7 @@ public class LinearLayoutActivity extends Activity{
                     LinearLayoutTab2 tab2 = new LinearLayoutTab2();
                     return tab2;
                 case 2:
-                    LinearLayoutTab3 tab3 = new LinearLayoutTab3();
+                    LinearLayoutTab2 tab3 = new LinearLayoutTab2();
                     return tab3;
                 default:
                     return null;
@@ -79,6 +84,8 @@ public class LinearLayoutActivity extends Activity{
                     return "SECTION 2";
                 case 2:
                     return "SECTION 3";
+                case 3:
+                    return "SECTION 4";
             }
             return null;
         }

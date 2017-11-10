@@ -50,14 +50,28 @@
             android:name=".LinearLayoutActivity"
             android:label="@string/linear_layout"
             android:screenOrientation="portrait" />
-        <activity android:name=".WidgetsActivity"
-            android:screenOrientation="portrait"
-            android:label="@string/widgets"/>
-        <activity android:name=".GettingStartedTaskActivity"
+        <activity
+            android:name=".WidgetsActivity"
+            android:label="@string/widgets"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GettingStartedTaskActivity"
             android:label="@string/task"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".LayoutIntroduction"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LayoutIntroduction"
             android:label="@string/intro_layouts"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LinearLayoutTryMeActivity"
+            android:label="@string/linear_layout"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Lesson1TaskActivity"
+            android:label="@string/task"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Lesson1TaskAnswerActivity"
+            android:label="@string/answers"
             android:screenOrientation="portrait"/>
     </application>
 

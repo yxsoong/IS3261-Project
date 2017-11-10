@@ -3,6 +3,8 @@
 
 
     <string name="task">Task</string>
+    <string name="try_me">Try Me!!!</string>
+    <string name="answers">Answers</string>
 
     <!--/*Main View Fragment-->
     <string name="appName">Android Academy</string>
@@ -31,9 +33,11 @@
     <string name="createProject5">5. Customize the Activity. Uncheck Backwards Compatibility and click finish.</string>
     <string name="createProject6">6. Congratulations! You have created your first project!</string>
     <string name="setting_up_android_emulator">Setting up Android Emulator</string>
-    <string name="avd_manager">An Android Virtual Device (AVD) is a configuration that defines the characteristics of an Android phone, tablet, Android Wear, or Android TV device that you want to simulate in the Android Emulator. The AVD Manager is an interface you can launch from Android Studio that helps you create and manage AVDs.</string>
+    <string name="before_you_start">Before you start:</string>
+    <string name="avd_manager">An Android Virtual Device (AVD) is a configuration that defines the characteristics of an Android phone, tablet, Android Wear, or Android TV device that you want to simulate in the Android Emulator.</string>
     <string name="action_settings">Settings</string>
-    <string name="getting_started_task">Task: Create a new project called MyAndroidTasks and change the text so that it looks like the one below</string>
+    <string name="getting_started_task">1: Create a new project called MyAndroidTasks</string>
+    <string name="getting_started_task2">2: Change the \"Hello World\" in TextView to \"This is my first task!\"</string>
 
     <!--Lesson 1 Activity-->
     <string name="intro_layouts">Introduction to Layouts</string>
@@ -67,6 +71,11 @@ requires these information before it can run any app code.</string>
     <string name="introManifest12">5. List of Instrumentation classes that provide profiling and other information as the application runs.</string>
     <string name="introManifest13">6.Minimum required level of the Android API</string>
     <string name="introManifest14">7.List of libraries</string>
+    <string name="title_activity_lesson1_task">Lesson1TaskActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="section_format">Hello World from section: %1$d</string>
     <!--Lesson 4 Android Terms-->
 
 

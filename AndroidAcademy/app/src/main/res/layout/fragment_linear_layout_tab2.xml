@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="bottom|center"
-        android:text="2 of 6"
+        android:text="2 of 3"
         android:textAlignment="center"
         android:layout_alignParentBottom="true"
         android:textColor="@color/black"
@@ -29,49 +29,27 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Using vertical linear layout"
             android:textColor="@color/black"
-            android:textStyle="bold"
             android:fontFamily="serif"
-            android:textSize="22sp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="For this exercise, we will be using the Hello World project we created."
-            android:textColor="@color/black"
-            android:textSize="14sp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Your activity_main.xml should look something like this \n(it's okay if it's not)"
-            android:textColor="@color/black"
-            android:textSize="14sp"/>
-
-        <com.github.chrisbanes.photoview.PhotoView
-            android:id="@+id/photoView1"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_gravity="center"
-            android:layout_marginBottom="10dp"
-            android:scaleType="centerInside"
-            android:src="@drawable/linearlayoutlesson1" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Change ConstaintLayout to LinearLayout"
-            android:textColor="@color/black"
-            android:textAllCaps="false"
-            android:textSize="14sp"/>
+            android:text="It is important to take note of the orientation in LinearLayout. To set the orientation, use android:orientation. For this exercise, we shall set orientation to vertical."/>
 
         <com.github.chrisbanes.photoview.PhotoView
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:adjustViewBounds="false"
             android:scaleType="centerCrop"
-            android:src="@drawable/linearlayoutlesson2" />
+            android:src="@drawable/linearlayoutlesson3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="serif"
+            android:text="You should see something like this"/>
+
+        <com.github.chrisbanes.photoview.PhotoView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/linearlayoutlesson4" />
 
     </LinearLayout>
 

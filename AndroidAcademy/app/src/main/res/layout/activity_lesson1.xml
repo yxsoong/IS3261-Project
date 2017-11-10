@@ -55,7 +55,8 @@
         android:id="@+id/taskBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/task"/>
+        android:text="@string/task"
+        android:onClick="onClick_GoToLesson1TaskActivity"/>
 
     <!--<TextView
         android:id="@+id/headerXML"
