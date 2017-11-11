@@ -15,6 +15,7 @@ import android.view.MenuItem;
 public class GettingStartedTaskActivity extends Activity implements ActionBar.TabListener{
     private SectionsPagerAdapter mSectionsPagerAdapter;
     private ViewPager mViewPager;
+    public static final String URLKEY = "urlAnswers";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -86,7 +87,8 @@ public class GettingStartedTaskActivity extends Activity implements ActionBar.Ta
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            Intent myIntent = new Intent(getApplicationContext(), Lesson1TaskAnswerActivity.class);
+            Intent myIntent = new Intent(getApplicationContext(), TaskAnswerActivity.class);
+            myIntent.putExtra(URLKEY, "https://raw.githubusercontent.com/yxsoong/IS3261-Project/master/AndroidAcademy/app/src/main/res/layout/fragment_getting_started_task_example.xml");
             startActivity(myIntent);
             return true;
         } else if(id == android.R.id.home){
