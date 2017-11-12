@@ -1,10 +1,10 @@
 package com.yxsoong.project.androidacademy;
 
-import android.app.ActionBar;
-import android.app.Activity;
+import android.support.v7.app.ActionBar;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MenuItem;
 import android.widget.LinearLayout;
@@ -21,8 +21,8 @@ import io.github.kbiakov.codeview.adapters.CodeWithDiffsAdapter;
 import io.github.kbiakov.codeview.adapters.Options;
 import io.github.kbiakov.codeview.views.DiffModel;
 
-public class TaskAnswerActivity extends Activity {
-    CodeView codeView, codeView2;
+public class TaskAnswerActivity extends AppCompatActivity {
+    CodeView codeView;
     //TextView tv;
     public static final String URLKEY = "urlAnswers";
     @Override
@@ -43,7 +43,7 @@ public class TaskAnswerActivity extends Activity {
 //        tv.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
 //        linearLayout.addView(tv);
 
-        ActionBar actionBar = getActionBar();
+        ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
     }
 

@@ -65,9 +65,14 @@ public class MainRecyclerAdapter extends RecyclerView.Adapter<MainRecyclerAdapte
                     switch (position){
                         case 0:
                             myIntent = new Intent(context, GettingStartedActivity.class);
+                            context.startActivity(myIntent);
+                            break;
+                        case 1:
+                            myIntent = new Intent(context, Lesson1Activity.class);
+                            context.startActivity(myIntent);
                             break;
                     }
-                    context.startActivity(myIntent);
+
                 }
             });
         }

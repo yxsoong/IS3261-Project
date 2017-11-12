@@ -1,15 +1,15 @@
 package com.yxsoong.project.androidacademy;
 
-import android.app.ActionBar;
-import android.app.Activity;
+import android.support.v7.app.ActionBar;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.os.Bundle;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
-public class LinearLayoutActivity extends Activity{
+public class LinearLayoutActivity extends AppCompatActivity{
 //    private static String ORIENTAION_KEY = "orientation";
 //    private static String LAYOUT_KEY = "layoutType";
 //    Fragment verticalFragment, horizontalFragment;
@@ -31,7 +31,7 @@ public class LinearLayoutActivity extends Activity{
         mViewPager = (ViewPager) findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
-        ActionBar actionBar = getActionBar();
+        ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
 
 

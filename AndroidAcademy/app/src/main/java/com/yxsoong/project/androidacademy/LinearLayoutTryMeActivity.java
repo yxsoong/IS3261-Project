@@ -1,17 +1,17 @@
 package com.yxsoong.project.androidacademy;
 
-import android.app.ActionBar;
-import android.app.Activity;
+import android.support.v7.app.ActionBar;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.DragEvent;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-public class LinearLayoutTryMeActivity extends Activity implements XMLFragment.OnFragmentInteractionListener, PaletteFragment.OnFragmentInteractionListener{
+public class LinearLayoutTryMeActivity extends AppCompatActivity implements XMLFragment.OnFragmentInteractionListener, PaletteFragment.OnFragmentInteractionListener{
     private static String ORIENTAION_KEY = "orientation";
     private static String LAYOUT_KEY = "layoutType";
     Fragment verticalFragment, horizontalFragment, paletteFragment;
@@ -53,7 +53,7 @@ public class LinearLayoutTryMeActivity extends Activity implements XMLFragment.O
 
         View layoutView = findViewById(R.id.linearLayoutContainer);
         layoutView.setOnDragListener(dragListener);
-        ActionBar actionBar = getActionBar();
+        ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
     }
 

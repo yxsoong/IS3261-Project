@@ -1,14 +1,14 @@
 package com.yxsoong.project.androidacademy;
 
-import android.app.ActionBar;
-import android.app.Activity;
+import android.support.v7.app.ActionBar;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
 
-public class Lesson1Activity extends Activity {
+public class Lesson1Activity extends AppCompatActivity {
     LinearLayout linearLayout;
 
     @Override
@@ -16,7 +16,7 @@ public class Lesson1Activity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lesson1);
 
-        ActionBar actionBar = getActionBar();
+        ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
 
         /*FragmentManager fragmentManager = getFragmentManager();
