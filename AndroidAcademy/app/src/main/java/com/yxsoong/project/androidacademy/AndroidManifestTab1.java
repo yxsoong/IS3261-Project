@@ -31,14 +31,13 @@ public class AndroidManifestTab1 extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_android_manifest_tab1, container, false);
 
-        String words = "What is Android Manifest?\n" +
-                "It is a file that provides essential information about your app on the Android System. The system requires these information before it can run any of the app's code. These are the following information presented in Android Manifest:";
+        String words = getString(R.string.introManifest1);
         SpannableString ss1 = new SpannableString(words);
         ss1.setSpan(new ForegroundColorSpan(Color.BLUE),0,25,0);
         TextView introManifest2 = view.findViewById(manifestIntro2);
         introManifest2.setText(ss1);
 
-        words = "It names the Java package for the application, which serves as a unique identifier for the application.";
+        words = getString(R.string.introManifest2);
         ss1 = new SpannableString(words);
         ss1.setSpan(new ForegroundColorSpan(Color.BLUE),0,45,0);
 
@@ -46,13 +45,13 @@ public class AndroidManifestTab1 extends Fragment {
         TextView introManifest3 = view.findViewById(R.id.manifestIntro3);
         introManifest3.setText(ss1);
 
-        words = "It names the classes and their components. These declarations inform the Android system of the components and the conditions in which they can be launched.";
+        words = getString(R.string.introManifest3);
         ss1 = new SpannableString(words);
         ss1.setSpan(new ForegroundColorSpan(Color.BLUE),0,42,0);
         TextView introManifest4 = view.findViewById(R.id.manifestIntro4);
         introManifest4.setText(ss1);
 
-        words = "It determines the processes that host the application components.";
+        words = getString(R.string.introManifest4);
         ss1 = new SpannableString(words);
         ss1.setSpan(new ForegroundColorSpan(Color.BLUE),0,65,0);
         TextView introManifest5 = view.findViewById(R.id.manifestIntro5);

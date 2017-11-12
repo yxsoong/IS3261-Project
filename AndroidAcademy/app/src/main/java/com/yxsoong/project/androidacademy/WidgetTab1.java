@@ -32,15 +32,13 @@ public class WidgetTab1 extends Fragment {
         // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.fragment_widget_tab1, container, false);
 
-        String words = "What are Widgets?\n"+
-                "The Widget package contains mostly visual User-Interface elements that you can use on our Application Screen. In Android Studios, there are pre-included widgets that you are able to use in the .xml files, such as TextView, Buttons, and many more.";
+        String words = getString(R.string.widgetText1);
         SpannableString ss1 = new SpannableString(words);
         ss1.setSpan(new ForegroundColorSpan(Color.BLUE),0,18,0);
         TextView widgetText1 = view.findViewById(widget1);
         widgetText1.setText(ss1);
 
-        words = "The list of widgets provided by android studios can be found when an XML file is created. \n" +
-                "XML files can usually be found under the res/layout/ folder in Android Studios.";
+        words = getString(R.string.widgetText2);
         ss1 = new SpannableString(words);
         ss1.setSpan(new ForegroundColorSpan(Color.BLUE),132,144,0);
         TextView widgetText2 = view.findViewById(widget2);

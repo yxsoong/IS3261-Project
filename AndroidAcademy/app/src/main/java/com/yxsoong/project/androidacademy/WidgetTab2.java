@@ -31,12 +31,9 @@ public class WidgetTab2 extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_widget_tab2, container, false);
 
-        String words = "To see the widgets available for use, simply open the XML file.\n "+ "\n"+
-                "Once open, you should see a set of codes. Notice a section of the code tagged <TextView ../>." +
-                "This shows that by default, a viewable text, showing the words 'Hello World!' is used. \n" + "\n"+
-                "Click the Design tab on the bottom left of the edit panel.";
+        String words = "To see the widgets available for use, simply open the XML file.\\nOnce open, you should see a set of codes. Notice a section of the code tagged <TextView../>.\nThis shows that by default, a viewable text, showing the words \'Hello World!\' is used.\nClick the Design tab on the bottom left of the edit panel.";
         SpannableString ss1 = new SpannableString(words);
-        ss1.setSpan(new ForegroundColorSpan(Color.BLUE),245,305,0);
+        ss1.setSpan(new ForegroundColorSpan(Color.BLUE),245,303,0);
         TextView widgetText3 = view.findViewById(widget3);
         widgetText3.setText(ss1);
 //

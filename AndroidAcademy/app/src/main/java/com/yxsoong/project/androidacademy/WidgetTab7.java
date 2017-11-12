@@ -32,15 +32,14 @@ public class WidgetTab7 extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_widget_tab7, container, false);
 
-        String words = "To create a new String in the program, simply type in <string name=\"string_name\">My New String</string>, and fill in the string name and string parts of the code in the next line";
+        String words = "To create a new String in the program, simply type in <string name=\"string_name\">My New String </string>, and fill in the string name and string parts of the code in the next line";
 
         SpannableString ss1 = new SpannableString(words);
         ss1.setSpan(new ForegroundColorSpan(Color.BLUE),53 ,104,0);
         TextView widgetText6 = view.findViewById(widget8);
         widgetText6.setText(ss1);
 
-        words = "Return to the layout XML file, and in the <TextView ../> sections of the codes, notice the line  android:text=\"Hello World!\".  \n" +
-                "Change the text by deleting Hello World! and typing @string/, followed by your string name.";
+        words = "Return to the layout XML file, and in the <TextView../> sections of the codes, notice the line android:text=\"Hello World!\".\nChange the text by deleting Hello World! and typing @string/, followed by your string name.";
 
         ss1 = new SpannableString(words);
         ss1.setSpan(new ForegroundColorSpan(Color.BLUE),41,58,0);

@@ -37,29 +37,26 @@ public class AndroidManifestTab2 extends Fragment {
 
 
 
-        String words = "It declares the permissions that the application must have to:\n" +
-                "- access protected parts of the API\n" +
-                "interact with other apps.\n" +
-                "- interact with the application's components.";
+        String words = getString(R.string.introManifest5);
 
         SpannableString ss1 = new SpannableString(words);
         ss1.setSpan(new ForegroundColorSpan(Color.BLUE),0,62,0);
         TextView introManifest6 = view.findViewById(manifestIntro6);
         introManifest6.setText(ss1);
 
-        words = "It lists the Instrumentation classes which are present in the manifest only while the application is being developed and are removed before the application is published.";
+        words = getString(R.string.introManifest6);
         ss1 = new SpannableString(words);
         ss1.setSpan(new ForegroundColorSpan(Color.BLUE),0,36,0);
         TextView introManifest7 = view.findViewById(manifestIntro7);
         introManifest7.setText(ss1);
 
-        words = "It declares the minimum level of the Android API that the application requires.";
+        words = getString(R.string.introManifest7);
         ss1 = new SpannableString(words);
         ss1.setSpan(new ForegroundColorSpan(Color.BLUE),0,79,0);
         TextView introManifest8 = view.findViewById(manifestIntro8);
         introManifest8.setText(ss1);
 
-        words = "It lists the libraries that the application must be linked against.";
+        words = getString(R.string.introManifest8);
         ss1 = new SpannableString(words);
         ss1.setSpan(new ForegroundColorSpan(Color.BLUE),0,67,0);
         TextView introManifest9 = view.findViewById(manifestIntro9);

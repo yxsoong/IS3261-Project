@@ -32,19 +32,14 @@ public class WidgetTab6 extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_widget_tab6, container, false);
 
-        String words = "Let's try to edit the words shown through the TextView widget." +
-                "First, open the Strings library in Res/Values/Strings." +
-                "You should be able to see a line of code in the Strings.xml file.";
+        String words = getString(R.string.widgetText7);
 
         SpannableString ss1 = new SpannableString(words);
         ss1.setSpan(new ForegroundColorSpan(Color.BLUE),97 ,115,0);
         TextView widgetText6 = view.findViewById(widget7);
         widgetText6.setText(ss1);
 
-        words = "A String refers to a line of words." +
-                "Each line of code consists of 2 pieces of information: The name of the string that points the program to the string, and the string itself." +
-                "In the example above, the red box is where the name of the string is, and the blue box is the actual string.";
-
+        words = getString(R.string.widgetText8);
         ss1 = new SpannableString(words);
         ss1.setSpan(new ForegroundColorSpan(Color.BLUE),34,174,0);
         TextView widgetText7 = view.findViewById(widget8);

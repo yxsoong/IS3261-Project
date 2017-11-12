@@ -28,7 +28,7 @@ public class WidgetTab8 extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_widget_tab8, container, false);
-        String words = "Now click the design tab, and see that the textView no longer shows \"HelloWorld!\", but your new string! ";
+        String words = getString(R.string.widgetText3);
 
         SpannableString ss1 = new SpannableString(words);
         TextView widgetText10 = view.findViewById(widget10);

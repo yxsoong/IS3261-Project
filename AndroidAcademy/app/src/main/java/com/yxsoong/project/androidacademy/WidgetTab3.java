@@ -31,10 +31,9 @@ public class WidgetTab3 extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_widget_tab3, container, false);
 
-        String words = "You should see a preview of what the app looks on an android device once the app is run. \n" +
-                "We can find the available widgets on the top left of the edit panel. ";
+        String words = getString(R.string.widgetText4);
         SpannableString ss1 = new SpannableString(words);
-        ss1.setSpan(new ForegroundColorSpan(Color.BLUE),87,159,0);
+        ss1.setSpan(new ForegroundColorSpan(Color.BLUE),87,155,0);
         TextView widgetText3 = view.findViewById(widget4);
         widgetText3.setText(ss1);
 

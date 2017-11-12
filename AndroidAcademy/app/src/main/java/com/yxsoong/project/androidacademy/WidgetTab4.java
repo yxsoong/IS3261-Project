@@ -31,8 +31,7 @@ public class WidgetTab4 extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_widget_tab4, container, false);
 
-        String words = "Click and drag the bottom left corner of the widget list to get a clearer view of the widgets.\n" +
-                "To use a widget, simply click and drag the widget onto the screen display.";
+        String words = getString(R.string.widgetText5);;
         SpannableString ss1 = new SpannableString(words);
         ss1.setSpan(new ForegroundColorSpan(Color.BLUE),94,169,0);
         TextView widgetText3 = view.findViewById(widget5);

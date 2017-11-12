@@ -18,7 +18,7 @@
         android:text="3 of 3"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="9sp"
+        android:textSize="@dimen/page_text_size"
         android:textStyle="bold" />
 
     <LinearLayout

@@ -56,27 +56,29 @@
     <string name="pickers">Pickers</string>
 
     <!--Lesson 3 Android Manifest-->
-    <string name="introManifest1">What is AndroidManifest?</string>
-    <string name="introManifest2">File that provides essential information about your app on the Android System. The system
-requires these information before it can run any app code.</string>
-    <string name="introManifest3">These are the information presented in Android Manifest:</string>
-    <string name="introManifest4">1. Java Package Name </string>
-    <string name="introManifest5">The package name serves as a unique identifier for the application.</string>
-    <string name="introManifest6">2.Components of the Application. </string>
-    <string name="introManifest7">Includes activities, services, broadcast receivers, and content providers that compose the application.</string>
-    <string name="introManifest8">It also names the classes that implement these components and publishes their capabilities. These declarations inform the Android system of the components how they can be launched.</string>
-    <string name="introManifest9">3. Processes that host the application components.</string>
-    <string name="introManifest10">4. Permissions to access protected parts of the API and interact with other applications. </string>
-    <string name="introManifest11">It also declares the permissions that others are required to have in order to interact with the applications components.</string>
-    <string name="introManifest12">5. List of Instrumentation classes that provide profiling and other information as the application runs.</string>
-    <string name="introManifest13">6.Minimum required level of the Android API</string>
-    <string name="introManifest14">7.List of libraries</string>
+    <string name="introManifest1">What is Android Manifest?\nIt is a file that provides essential information about your app on the Android System. The system requires these information before it can run any of the app\'s code. These are the following information presented in Android Manifest:</string>
+    <string name="introManifest2">It names the Java package for the application, which serves as a unique identifier for the application.</string>
+    <string name="introManifest3">It names the classes and their components. These declarations inform the Android system of the components and the conditions in which they can be launched.</string>
+    <string name="introManifest4">It determines the processes that host the application components. </string>
+    <string name="introManifest5">It declares the permissions that the application must have to:\n- access protected parts of the API\n-interact with other apps.\n- interact with the application\'s components.</string>
+    <string name="introManifest6">It lists the Instrumentation classes which are present in the manifest only while the application is being developed and are removed before the application is published. </string>
+    <string name="introManifest7">It declares the minimum level of the Android API that the application requires.</string>
+    <string name="introManifest8">It lists the libraries that the application must be linked against.</string>
+    <string name="introManifest9">This is an example of Android Manifest:</string>
     <string name="title_activity_lesson1_task">Lesson1TaskActivity</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
     <string name="tab_text_3">Tab 3</string>
     <string name="section_format">Hello World from section: %1$d</string>
-    <!--Lesson 4 Android Terms-->
 
+    <!--Lesson 4 Android Widgets-->
+    <string name="widgetText1">What are Widgets?\nThe Widget package contains mostly visual User-Interface elements that you can use on our Application Screen. In Android Studios, there are pre-included widgets that you are able to use in the .xml files, such as TextView, Buttons, and many more.</string>
+    <string name="widgetText2">The list of widgets provided by android studios can be found when an XML file is created.\nXML files can usually be found under the res/layout/ folder in Android Studios.</string>
+    <string name="widgetText3">Now click the design tab, and see that the textView no longer shows "HelloWorld!", but your new string!</string>
+    <string name="widgetText4">You should see a preview of what the app looks on an android device once the app is run\nWe can find the available widgets on the top left of the edit panel</string>
+    <string name="widgetText5">Click and drag the bottom left corner of the widget list to get a clearer view of the widgets.\nTo use a widget, simply click and drag the widget onto the screen display.</string>
+    <string name="widgetText6">Click the text tab to look at the codes. Notice that a new section of codes has been added.\nDragging the widget on the Design view generates a new set of default codes automatically.\nWe can edit the position, size and words on the widget by editing these codes.</string>
+    <string name="widgetText7">Let\'s try to edit the words shown through the TextView widget.\nFirst, open the Strings library in Res/Values/Strings.\nYou should be able to see a line of code in the Strings.xml file.</string>
+    <string name="widgetText8">A String refers to a line of words.\nEach line of code consists of 2 pieces of information: The name of the string that points the program to the string, and the string itself.\nIn the example above, the red box is where the name of the string is, and the blue box is the actual string.</string>
 
 </resources>
