@@ -1,25 +1,28 @@
 package com.yxsoong.project.androidacademy;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.view.View;
 
-public class GettingStartedActivity extends Activity {
+public class GettingStartedActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_getting_started);
-
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
 //        ActionBar actionBar = getActionBar();
 //        actionBar.setDisplayHomeAsUpEnabled(true);
     }
 
-//    public boolean onOptionsItemSelected(MenuItem item){
-//        finish();
-//        return true;
-//    }
+    public boolean onOptionsItemSelected(MenuItem item){
+        finish();
+        return true;
+    }
 
     public void onClick_GoToCreateProjectActivity(View view){
         Intent myIntent = new Intent(this, CreateProjectActivity.class);
