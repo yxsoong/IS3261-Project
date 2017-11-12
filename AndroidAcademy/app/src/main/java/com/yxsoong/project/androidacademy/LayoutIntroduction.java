@@ -24,7 +24,7 @@ public class LayoutIntroduction extends AppCompatActivity {
                 "A layout defines the visual structure for a user interface, such as the UI for an activity or app widget.\n You can declare a layout in two ways:";
 
         SpannableString ss1 = new SpannableString(words);
-        ss1.setSpan(new ForegroundColorSpan(Color.BLUE), 0, 19, 0);
+        ss1.setSpan(new ForegroundColorSpan(Color.BLUE), 0, 17, 0);
         TextView textView = findViewById(R.id.layoutTxt1);
         textView.setText(ss1);
 

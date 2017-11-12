@@ -50,12 +50,12 @@ public class Lesson1TaskActivity extends AppCompatActivity implements ActionBar.
         // When swiping between different sections, select the corresponding
         // tab. We can also use ActionBar.Tab#select() to do this if we have
         // a reference to the Tab.
-        mViewPager.setOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener() {
-            @Override
-            public void onPageSelected(int position) {
-                actionBar.setSelectedNavigationItem(position);
-            }
-        });
+//        mViewPager.setOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener() {
+//            @Override
+//            public void onPageSelected(int position) {
+//                actionBar.setSelectedNavigationItem(position);
+//            }
+//        });
 
         // For each of the sections in the app, add a tab to the action bar.
         for (int i = 0; i < mSectionsPagerAdapter.getCount(); i++) {
@@ -112,6 +112,8 @@ public class Lesson1TaskActivity extends AppCompatActivity implements ActionBar.
     public void onTabReselected(ActionBar.Tab tab, android.app.FragmentTransaction ft) {
 
     }
+
+
 
     @Override
     public void onTabSelected(ActionBar.Tab tab, FragmentTransaction ft) {

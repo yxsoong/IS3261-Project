@@ -67,6 +67,7 @@
                 android:layout_weight="1"
                 android:layout_gravity="right">
                 <ProgressBar
+                    android:id="@+id/progressBar"
                     android:layout_marginTop="30dp"
                     android:indeterminate="false"
                     style="?android:attr/progressBarStyleHorizontal"
@@ -98,7 +99,7 @@
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="430dp"
         app:cardCornerRadius="10dp"
         app:cardElevation="3dp">
 

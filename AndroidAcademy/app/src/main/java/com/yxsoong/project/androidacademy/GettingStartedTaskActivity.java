@@ -102,7 +102,7 @@ public class GettingStartedTaskActivity extends AppCompatActivity implements Act
 
     @Override
     public void onTabSelected(ActionBar.Tab tab, android.support.v4.app.FragmentTransaction ft) {
-
+        mViewPager.setCurrentItem(tab.getPosition());
     }
 
     @Override

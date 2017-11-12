@@ -94,7 +94,6 @@
     <string name="emulatorText9">Congratulations! You have succesfully run your first Android app!</string>
 
 
-
     <!--Linear Layout Fragment-->
     <string name="linearLayoutText1">Using vertical linear layout</string>
     <string name="linearLayoutText2">For this exercise, we will be using the Hello World project we created.</string>
@@ -125,6 +124,20 @@
     <string name="lesson1text17">5. Drag and drop a Button into the layout</string>
     <string name="lesson1text18">5.1 Edit text to \'Enter\'</string>
     <string name="lesson1text19">6. Play around with margin and padding to make your app look like the app in the Example page</string>
+    <string name="title_activity_register">Register</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
 
 
 </resources>

@@ -21,7 +21,7 @@
 
     <style name="MyActionBarTitle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
         <item name="android:textColor">@color/black</item>
-        <item name="android:fontFamily">@font/asul_bold</item>
+        <item name="android:fontFamily">@font/roboto_condensed_bold</item>
     </style>
 
     <style name="DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">

@@ -61,7 +61,7 @@ public class LinearLayoutActivity extends AppCompatActivity{
                     LinearLayoutTab2 tab2 = new LinearLayoutTab2();
                     return tab2;
                 case 2:
-                    LinearLayoutTab2 tab3 = new LinearLayoutTab2();
+                    LinearLayoutTab3 tab3 = new LinearLayoutTab3();
                     return tab3;
                 default:
                     return null;

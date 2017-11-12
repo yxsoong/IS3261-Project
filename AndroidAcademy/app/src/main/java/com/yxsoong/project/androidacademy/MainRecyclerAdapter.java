@@ -1,5 +1,6 @@
 package com.yxsoong.project.androidacademy;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
@@ -46,6 +47,7 @@ public class MainRecyclerAdapter extends RecyclerView.Adapter<MainRecyclerAdapte
     }
 
     class ViewHolder extends RecyclerView.ViewHolder{
+        public static final int REQUEST_CODE = 1;
         public int currentItem;
         public ImageView itemImage;
         public TextView title;
@@ -65,7 +67,9 @@ public class MainRecyclerAdapter extends RecyclerView.Adapter<MainRecyclerAdapte
                     switch (position){
                         case 0:
                             myIntent = new Intent(context, GettingStartedActivity.class);
-                            context.startActivity(myIntent);
+                            //context.startActivity(myIntent);
+                            ((Activity)context).startActivityForResult(myIntent, REQUEST_CODE);
+
                             break;
                         case 1:
                             myIntent = new Intent(context, Lesson1Activity.class);

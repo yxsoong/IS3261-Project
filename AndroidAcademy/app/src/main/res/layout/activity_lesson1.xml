@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:id="@+id/lesson1LinearLayout"
+    android:id="@+id/lesson1RecyclerView"
     tools:context="com.yxsoong.project.androidacademy.Lesson1Activity">
 
-    <TextView
+    <!--<TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -56,7 +55,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/task"
-        android:onClick="onClick_GoToLesson1TaskActivity"/>
+        android:onClick="onClick_GoToLesson1TaskActivity"/>-->
 
     <!--<TextView
         android:id="@+id/headerXML"
@@ -102,4 +101,4 @@
 
     </HorizontalScrollView>-->
 
-</LinearLayout>
+</android.support.v7.widget.RecyclerView>

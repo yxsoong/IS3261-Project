@@ -6,7 +6,7 @@
     <stroke
         android:width="3dip"
         android:color="@android:color/black" />
-    <solid android:color="@color/dragDropXML"/>
+    <solid android:color="@color/snowWhite"/>
     <!--<gradient
         android:angle="90"
         android:centerColor="#555994"
