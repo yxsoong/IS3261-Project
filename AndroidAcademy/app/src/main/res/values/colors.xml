@@ -10,5 +10,6 @@
     <color name="snowWhite">#FFFAFA</color>
     <color name="tryMe">#ce0447</color>
     <color name="dragDropXML">#cedbe5</color>
-
+    <color name="androidGreen">#A4C639</color>
+    <color name="white">#FFFFFF</color>
 </resources>

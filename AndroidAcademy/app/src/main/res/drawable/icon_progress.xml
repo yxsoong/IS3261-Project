@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-
-</selector>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/heptagon"
+        android:width="200dp"
+        android:height="200dp"/>
+    <item android:drawable="@drawable/icon_android" android:width="55dp"
+        android:height="55dp"
+        android:left="40dp"
+        android:top="40dp"/>
+    <item android:drawable="@drawable/circular_progress_bar"
+        android:height="200dp"
+        android:width="200dp"
+        android:top="40dp"
+        android:left="100dp"/>
+</layer-list>

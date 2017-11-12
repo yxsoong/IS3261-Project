@@ -8,8 +8,107 @@
     android:orientation="vertical"
     tools:context="com.yxsoong.project.androidacademy.MainActivity">
 
+    <android.support.v7.widget.CardView
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/black">
 
-    <ScrollView
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+                <TextView
+                    android:id="@+id/welcomeTV"
+                    android:paddingTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:text="Welcome"
+                    android:textColor="@color/androidGreen"/>
+                <TextView
+                    android:id="@+id/nameTV"
+                    android:paddingTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/welcomeTV"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:text="Name"
+                    android:textColor="@color/white"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/nameTV"
+                    android:paddingBottom="20dp"
+                    android:src="@drawable/android_wave" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_marginRight="10dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="right">
+                <ProgressBar
+                    android:layout_marginTop="30dp"
+                    android:indeterminate="false"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:max="100"
+                    android:progress="50"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:progressDrawable="@drawable/circular_progress_bar"/>
+
+                <TextView
+                    android:layout_marginTop="300dp"
+                    android:id="@+id/progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="50%"
+                    android:textAlignment="center"
+                    android:textColor="#A4C639"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="-20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:paddingLeft="@dimen/default_margin"
+            android:paddingRight="@dimen/default_margin"
+            android:id="@+id/recyclerView"
+            android:paddingBottom="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/snowWhite">
+
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v7.widget.CardView>
+
+    <!--<ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -21,5 +120,5 @@
             android:id="@+id/mainLayout1">
         </FrameLayout>
 
-    </ScrollView>
+    </ScrollView>-->
 </LinearLayout>

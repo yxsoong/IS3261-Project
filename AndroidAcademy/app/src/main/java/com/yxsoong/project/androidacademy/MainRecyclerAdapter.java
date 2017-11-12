@@ -1,11 +1,11 @@
+package com.yxsoong.project.androidacademy;
+
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import com.yxsoong.project.androidacademy.R;
 
 /**
  * Created by User on 12/11/2017.
@@ -21,7 +21,7 @@ public class MainRecyclerAdapter extends RecyclerView.Adapter<MainRecyclerAdapte
 
     private int[] images = {R.drawable.creation, R.drawable.book_open_page_variant, R.drawable.book_open_page_variant, R.drawable.book_open_page_variant, R.drawable.book_open_page_variant, R.drawable.book_open_page_variant};
 
-    private int arrowImage = R.drawable.arrow_right;
+    private int arrowImage = R.drawable.chevron_right;
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.main_menu_card, parent, false);
