@@ -33,7 +33,7 @@ public class WidgetTab5 extends Fragment {
 
         String words = getString(R.string.widgetText6);;
         SpannableString ss1 = new SpannableString(words);
-        ss1.setSpan(new ForegroundColorSpan(Color.BLUE),90,184,0);
+        ss1.setSpan(new ForegroundColorSpan(Color.BLUE),90,183,0);
         TextView widgetText3 = view.findViewById(widget6);
         widgetText3.setText(ss1);
 

@@ -42,9 +42,9 @@ public class WidgetTab7 extends Fragment {
         words = "Return to the layout XML file, and in the <TextView../> sections of the codes, notice the line android:text=\"Hello World!\".\nChange the text by deleting Hello World! and typing @string/, followed by your string name.";
 
         ss1 = new SpannableString(words);
-        ss1.setSpan(new ForegroundColorSpan(Color.BLUE),41,58,0);
-        ss1.setSpan(new ForegroundColorSpan(Color.BLUE),95,125,0);
-        ss1.setSpan(new ForegroundColorSpan(Color.BLUE),180,188,0);
+        ss1.setSpan(new ForegroundColorSpan(Color.BLUE),41,55,0);
+        ss1.setSpan(new ForegroundColorSpan(Color.BLUE),95,124,0);
+        ss1.setSpan(new ForegroundColorSpan(Color.BLUE),175,183,0);
         TextView widgetText7 = view.findViewById(widget9);
         widgetText7.setText(ss1);
 

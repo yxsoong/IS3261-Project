@@ -29,10 +29,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:elevation="1dp"
             android:fontFamily="serif"
-            android:textAllCaps="false"
             android:text="@string/createProject3"
-            android:textColor="@color/black"/>
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
 
         <Space
             android:layout_width="match_parent"

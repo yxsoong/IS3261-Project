@@ -25,30 +25,30 @@
         android:layout_height="match_parent"
         android:layout_above="@+id/pageNumber">
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:layout_weight="1"
-            android:layout_gravity="center"
-            android:scaleType="centerInside"
-            android:src="@drawable/widgets11" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/widgets11" />
 
-        <TextView
-            android:id="@+id/widget3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginStart="20dp"
-            android:layout_weight="4" />
+            <TextView
+                android:id="@+id/widget3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_weight="4" />
 
-    </TableRow>
+        </TableRow>
 
 
-    <TableRow
+        <TableRow
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp">
