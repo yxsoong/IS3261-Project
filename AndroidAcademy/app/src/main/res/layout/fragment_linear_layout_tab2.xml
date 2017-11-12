@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/black"
             android:fontFamily="serif"
-            android:text="It is important to take note of the orientation in LinearLayout. To set the orientation, use android:orientation. For this exercise, we shall set orientation to vertical."/>
+            android:text="@string/linearLayoutText5"/>
 
         <com.github.chrisbanes.photoview.PhotoView
             android:layout_width="match_parent"
@@ -44,7 +44,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/black"
             android:fontFamily="serif"
-            android:text="You should see something like this"/>
+            android:text="@string/linearLayoutText6"/>
 
         <com.github.chrisbanes.photoview.PhotoView
             android:layout_width="wrap_content"

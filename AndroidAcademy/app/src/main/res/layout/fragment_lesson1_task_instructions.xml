@@ -20,7 +20,7 @@
             android:textColor="@color/black"
             android:fontFamily="serif"
             android:layout_marginBottom="10dp"
-            android:text="1. Use LinearLayout (or any layouts you prefer)"/>
+            android:text="@string/lesson1text4"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -28,16 +28,7 @@
             android:textColor="@color/black"
             android:fontFamily="serif"
             android:layout_marginBottom="10dp"
-            android:text="2. Drag and drop a TextView into the layout"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:paddingLeft="15dp"
-            android:fontFamily="serif"
-            android:layout_marginBottom="10dp"
-            android:text="2.1 Change the text to 'My Android Academy App'"/>
+            android:text="@string/lesson1text5"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -46,24 +37,7 @@
             android:paddingLeft="15dp"
             android:fontFamily="serif"
             android:layout_marginBottom="10dp"
-            android:text="2.2 Size of the text: 30sp"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:fontFamily="serif"
-            android:paddingLeft="15dp"
-            android:layout_marginBottom="10dp"
-            android:text="2.3 Text Colour: @color/colorPrimary"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:fontFamily="serif"
-            android:layout_marginBottom="10dp"
-            android:text="3. Drag and drop a TextView into the layout"/>
+            android:text="@string/lesson1text6"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -72,7 +46,24 @@
             android:paddingLeft="15dp"
             android:fontFamily="serif"
             android:layout_marginBottom="10dp"
-            android:text="2.1 Change the text to 'Name'"/>
+            android:text="@string/lesson1text7"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="serif"
+            android:paddingLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/lesson1text8"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="serif"
+            android:layout_marginBottom="10dp"
+            android:text="@string/lesson1text9"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -81,23 +72,7 @@
             android:paddingLeft="15dp"
             android:fontFamily="serif"
             android:layout_marginBottom="10dp"
-            android:text="2.2 Size of the text: 24sp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:fontFamily="serif"
-            android:paddingLeft="15dp"
-            android:layout_marginBottom="10dp"
-            android:text="2.3 Text Colour: #000000 (black)"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:fontFamily="serif"
-            android:layout_marginBottom="10dp"
-            android:text="3. Drag and drop EditText into the layout"/>
+            android:text="@string/lesson1text10"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -106,7 +81,23 @@
             android:paddingLeft="15dp"
             android:fontFamily="serif"
             android:layout_marginBottom="10dp"
-            android:text="3.1 Edit hint to 'Enter name'"/>
+            android:text="@string/lesson1text11"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="serif"
+            android:paddingLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/lesson1text12"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="serif"
+            android:layout_marginBottom="10dp"
+            android:text="@string/lesson1text13"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -115,23 +106,7 @@
             android:paddingLeft="15dp"
             android:fontFamily="serif"
             android:layout_marginBottom="10dp"
-            android:text="3.2 Size of the text: 18sp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:fontFamily="serif"
-            android:paddingLeft="15dp"
-            android:layout_marginBottom="10dp"
-            android:text="3.3 Text Colour: #FF0000 (red)"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:fontFamily="serif"
-            android:layout_marginBottom="10dp"
-            android:text="4. Drag and drop a Button into the layout"/>
+            android:text="@string/lesson1text14"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -140,7 +115,15 @@
             android:paddingLeft="15dp"
             android:fontFamily="serif"
             android:layout_marginBottom="10dp"
-            android:text="4.1 Edit text to 'Enter'"/>
+            android:text="@string/lesson1text15"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="serif"
+            android:paddingLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/lesson1text16"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -148,7 +131,24 @@
             android:textColor="@color/black"
             android:fontFamily="serif"
             android:layout_marginBottom="10dp"
-            android:text="5. Play around with margin and padding to make your app look like the app in the Example page"/>
+            android:text="@string/lesson1text17"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:paddingLeft="15dp"
+            android:fontFamily="serif"
+            android:layout_marginBottom="10dp"
+            android:text="@string/lesson1text18"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="serif"
+            android:layout_marginBottom="10dp"
+            android:text="@string/lesson1text19"/>
     </LinearLayout>
 
 

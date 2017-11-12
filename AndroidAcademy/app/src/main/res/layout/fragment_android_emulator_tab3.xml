@@ -31,7 +31,7 @@
             android:textColor="@color/black"
             android:fontFamily="serif"
             android:layout_marginBottom="10dp"
-            android:text="Congratulations! You have created a virtual Android device!"/>
+            android:text="@string/emulatorText5"/>
 
 
         <TextView
@@ -40,7 +40,7 @@
             android:textColor="@color/black"
             android:fontFamily="serif"
             android:layout_marginBottom="20dp"
-            android:text="Try running the Hello World project using the emulator we have created."/>
+            android:text="@string/emulatorText6"/>
 
         <TableLayout
             android:layout_width="match_parent"
@@ -64,7 +64,7 @@
                     android:textColor="@color/black"
                     android:fontFamily="serif"
                     android:paddingLeft="5sp"
-                    android:text="Click on the play button to run the app"/>
+                    android:text="@string/emulatorText7"/>
             </TableRow>
 
             <TableRow
@@ -85,7 +85,7 @@
                     android:textColor="@color/black"
                     android:fontFamily="serif"
                     android:paddingLeft="5sp"
-                    android:text="Select the AVD we created"/>
+                    android:text="@string/emulatorText8"/>
 
             </TableRow>
 

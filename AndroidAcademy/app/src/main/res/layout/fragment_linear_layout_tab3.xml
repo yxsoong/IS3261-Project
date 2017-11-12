@@ -29,7 +29,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Using horizontal linear layout"
+            android:text="@string/linearLayoutText7"
             android:textColor="@color/black"
             android:textStyle="bold"
             android:fontFamily="serif"
@@ -38,7 +38,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Change the layout from vertical to horizontal"
+            android:text="@string/linearLayoutText8"
             android:textColor="@color/black"
             android:textSize="14sp"/>
 
@@ -53,7 +53,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/black"
             android:fontFamily="serif"
-            android:text="You should see something like this"/>
+            android:text="@string/linearLayoutText6"/>
 
         <com.github.chrisbanes.photoview.PhotoView
             android:layout_width="wrap_content"

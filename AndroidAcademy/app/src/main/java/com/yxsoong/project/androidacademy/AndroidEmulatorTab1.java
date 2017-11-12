@@ -32,7 +32,7 @@ public class AndroidEmulatorTab1 extends Fragment {
         // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.fragment_android_emulator_tab1, container, false);
 
-        String words = "Download and Run Intel HAXM Emulator Installer";
+        String words = getString(R.string.emulatorText1);
         SpannableString ss1 = new SpannableString(words);
 
         ss1.setSpan(new ForegroundColorSpan(Color.RED),17,27,0);
@@ -40,7 +40,7 @@ public class AndroidEmulatorTab1 extends Fragment {
         TextView intelHAXMTV = view.findViewById(R.id.intelHAXMTV);
         intelHAXMTV.setText(ss1);
 
-        words = "To open AVD Manager, go to Tools > Android > AVD Manger";
+        words = getString(R.string.emulatorText2);
         ss1 = new SpannableString(words);
         ss1.setSpan(new ForegroundColorSpan(Color.BLUE),27,32,0);
         ss1.setSpan(new ForegroundColorSpan(Color.BLUE),35,42,0);
@@ -49,7 +49,7 @@ public class AndroidEmulatorTab1 extends Fragment {
         TextView openAVDTV = view.findViewById(R.id.openAVDTV);
         openAVDTV.setText(ss1);
 
-        words = "Click Create Virtual Device, at the bottom of the AVD Manager dialog.";
+        words = getString(R.string.emulatorText3);
         ss1 = new SpannableString(words);
         ss1.setSpan(new StyleSpan(Typeface.BOLD),6,27,0);
         TextView clickOnCreateTV = view.findViewById(R.id.clickOnCreateTV);

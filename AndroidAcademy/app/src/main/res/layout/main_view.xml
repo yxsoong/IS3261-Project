@@ -18,7 +18,7 @@
             android:id="@+id/gettingStartedBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/getting_started"/>
+            android:text="@string/getting_started" />
 
         <Button
             android:id="@+id/lesson1Btn"

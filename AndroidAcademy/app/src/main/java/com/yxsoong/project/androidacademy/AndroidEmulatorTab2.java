@@ -29,8 +29,7 @@ public class AndroidEmulatorTab2 extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_android_emulator_tab2, container, false);
 
-        String words = "Select either O or Nougat under the Recommended tab. " +
-                "If you see Download next to the system image, you need to download the system image.";
+        String words = getString(R.string.emulatorText4);
         SpannableString ss1 = new SpannableString(words);
         ss1.setSpan(new StyleSpan(Typeface.BOLD),14,15,0);
         ss1.setSpan(new StyleSpan(Typeface.BOLD),19,26,0);

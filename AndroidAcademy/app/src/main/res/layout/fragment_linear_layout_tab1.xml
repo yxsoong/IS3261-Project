@@ -29,7 +29,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Using vertical linear layout"
+            android:text="@string/linearLayoutText1"
             android:textColor="@color/black"
             android:textStyle="bold"
             android:fontFamily="serif"
@@ -38,14 +38,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="For this exercise, we will be using the Hello World project we created."
+            android:text="@string/linearLayoutText2"
             android:textColor="@color/black"
             android:textSize="14sp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Your activity_main.xml should look something like this.\n(it's okay if it's not)"
+            android:text="@string/linearLayoutText3"
             android:textColor="@color/black"
             android:textSize="14sp"/>
 
@@ -61,7 +61,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Change ConstaintLayout to LinearLayout. Delete those striked out in red."
+            android:text="@string/linearLayoutText4"
             android:textColor="@color/black"
             android:textAllCaps="false"
             android:textSize="14sp"/>

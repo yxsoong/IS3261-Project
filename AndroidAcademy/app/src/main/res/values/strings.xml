@@ -81,4 +81,50 @@
     <string name="widgetText7">Let\'s try to edit the words shown through the TextView widget.\nFirst, open the Strings library in Res/Values/Strings.\nYou should be able to see a line of code in the Strings.xml file.</string>
     <string name="widgetText8">A String refers to a line of words.\nEach line of code consists of 2 pieces of information: The name of the string that points the program to the string, and the string itself.\nIn the example above, the red box is where the name of the string is, and the blue box is the actual string.</string>
 
+
+    <!--Android Emulator-->
+    <string name="emulatorText1">Download and Run Intel HAXM Emulator Installer</string>
+    <string name="emulatorText2">To open AVD Manager, go to Tools > Android > AVD Manager</string>
+    <string name="emulatorText3">Click Create Virtual Device, at the bottom of the AVD Manager dialog.</string>
+    <string name="emulatorText4">Select either O or Nougat under the Recommended tab. If you see Download next to the system image, you need to download the system image.</string>
+    <string name="emulatorText5">Congratulations! You have created a virtual Android device!</string>
+    <string name="emulatorText6">Try running the Hello World project using the emulator we have created.</string>
+    <string name="emulatorText7">Click on the play button to run the app</string>
+    <string name="emulatorText8">Select the AVD we created</string>
+    <string name="emulatorText9">Congratulations! You have succesfully run your first Android app!</string>
+
+
+
+    <!--Linear Layout Fragment-->
+    <string name="linearLayoutText1">Using vertical linear layout</string>
+    <string name="linearLayoutText2">For this exercise, we will be using the Hello World project we created.</string>
+    <string name="linearLayoutText3">Your activity_main.xml should look something like this.\n(it's okay if it's not)</string>
+    <string name="linearLayoutText4">Change ConstraintLayout to LinearLayout. Delete those striked out in red.</string>
+    <string name="linearLayoutText5">It is important to take note of the orientation in LinearLayout. To set the orientation, use android:orientation. For this exercise, we shall set orientation to vertical.</string>
+    <string name="linearLayoutText6">You should see something like this:</string>
+    <string name="linearLayoutText7">Using horizontal linear layout</string>
+    <string name="linearLayoutText8">Change the layout from vertical to horizontal</string>
+
+    <!--Lesson1 Fragment-->
+    <string name="lesson1text1">My Android Academy App</string>
+    <string name="lesson1text2">Name</string>
+    <string name="lesson1text3">Enter name</string>
+    <string name="lesson1text4">1. Use LinearLayout (or any layouts you prefer)</string>
+    <string name="lesson1text5">2. Drag and drop a TextView into the layout</string>
+    <string name="lesson1text6">2.1 Change the text to \'My Android Academy App\'</string>
+    <string name="lesson1text7">2.2 Size of the text: 30sp</string>
+    <string name="lesson1text8">2.3 Text Colour: @color/colorPrimary</string>
+    <string name="lesson1text9">3. Drag and drop a TextView into the layout</string>
+    <string name="lesson1text10">3.1 Change the text to \'Name\'</string>
+    <string name="lesson1text11">3.2 Size of the text: 24sp</string>
+    <string name="lesson1text12">3.3 Text Colour: #000000 (black)</string>
+    <string name="lesson1text13">4. Drag and drop EditText into the layout</string>
+    <string name="lesson1text14">4.1 Edit hint to \'Enter name\'</string>
+    <string name="lesson1text15">4.2 Size of the text: 18sp</string>
+    <string name="lesson1text16">4.3 Text Colour: #FF0000 (red)</string>
+    <string name="lesson1text17">5. Drag and drop a Button into the layout</string>
+    <string name="lesson1text18">5.1 Edit text to \'Enter\'</string>
+    <string name="lesson1text19">6. Play around with margin and padding to make your app look like the app in the Example page</string>
+
+
 </resources>
