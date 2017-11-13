@@ -28,7 +28,7 @@ public class GettingStartedActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
 
         String[] itemTitle = {"Create Project", "Android Emulator", "Android Manifest", "Android Widgets", "Task"};
-        String[] itemDescriptions = {"Learn how to create your first project", "Setting up a virtual device for testing", "Information displayed in a manifest file","","Practice makes perfect"};
+        String[] itemDescriptions = {"Learn how to create your first project", "Setting up a virtual device for testing", "Information displayed in a manifest file","Handy widgets in Android Studios","Practice makes perfect"};
         int[] images = {R.drawable.folder_plus, R.drawable.cellphone_android, R.drawable.xml, R.drawable.settings, R.drawable.code_not_equal_variant};
         Class[] classes = {CreateProjectActivity.class, AndroidEmulatorActivity.class, AndroidManifestActivity.class, WidgetsActivity.class, GettingStartedTaskActivity.class};
 
