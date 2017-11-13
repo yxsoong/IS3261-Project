@@ -4,8 +4,10 @@ import android.app.Fragment;
 import android.content.ClipData;
 import android.content.Context;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.view.DragEvent;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +16,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 
@@ -28,7 +31,7 @@ public class XMLFragment extends Fragment {
     private static String LAYOUT_KEY = "layoutType";
     private static String TAG = "fragmentXML";
     private OnFragmentInteractionListener mListener;
-    private LinearLayout linearLayout;
+    private ViewGroup layout;
 
     public XMLFragment() {
         // Required empty public constructor
@@ -42,19 +45,34 @@ public class XMLFragment extends Fragment {
         //linearLayout = view.findViewById(R.id.xmlFragmentLayout);
         Bundle bundle = getArguments();
         if(bundle.getString(LAYOUT_KEY).equals("linearLayout")) {
-            linearLayout = new LinearLayout(getContext());
-            linearLayout.setId(View.generateViewId());
-            linearLayout.setBackgroundResource(R.color.lightGrey);
-            linearLayout.setTag(TAG);
+            layout = new LinearLayout(getContext());
+            layout.setId(View.generateViewId());
+            layout.setBackgroundResource(R.color.lightGrey);
+            layout.setTag(TAG);
             LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
             layoutParams.setMargins(10,10,10,10);
             if(bundle.getString(ORIENTAION_KEY).equals("horizontal"))
-                linearLayout.setOrientation(LinearLayout.HORIZONTAL);
+                ((LinearLayout)layout).setOrientation(LinearLayout.HORIZONTAL);
             else
-                linearLayout.setOrientation(LinearLayout.VERTICAL);
-            container.addView(linearLayout, layoutParams);
+                ((LinearLayout)layout).setOrientation(LinearLayout.VERTICAL);
+            container.addView(layout, layoutParams);
+        } else if(bundle.getString(LAYOUT_KEY).equals("relativeLayout")){
+            layout = new RelativeLayout(getContext());
+            layout.setId(View.generateViewId());
+            layout.setBackgroundColor(ContextCompat.getColor(getContext(),R.color.lightGrey));
+            layout.setTag(TAG);
+            RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+            layoutParams.setMargins(10,10,10,10);
+            Log.i("in1", "in1");
+            if(bundle.getString(ORIENTAION_KEY).equals("bottom")) {
+                Log.i("in", "in");
+                ((RelativeLayout) layout).setGravity(Gravity.BOTTOM);
+            }else
+                ((RelativeLayout)layout).setGravity(Gravity.RIGHT);
+            container.addView(layout, layoutParams);
         }
-        linearLayout.setOnDragListener(dragListener);
+
+        layout.setOnDragListener(dragListener);
         return view;
     }
 
@@ -90,6 +108,7 @@ public class XMLFragment extends Fragment {
         public boolean onDrag(View v, DragEvent event) {
             int dragEvent = event.getAction();
             View dragView = (View) event.getLocalState();
+
             switch (dragEvent){
                 case DragEvent.ACTION_DRAG_ENTERED:
                     break;
@@ -105,10 +124,10 @@ public class XMLFragment extends Fragment {
 
                     if(dragViewParentTag.equals(TAG)){
                         int dragViewParentId = ((View)dragView.getParent()).getId();
-                        if(dragViewParentId == linearLayout.getId()){
+                        if(dragViewParentId == layout.getId()){
                             break;
                         }
-                        int parentId = ((View) linearLayout.getParent()).getId();
+                        int parentId = ((View) layout.getParent()).getId();
                         mListener.removeViewForOtherFragment(parentId, dragView.getId());
                     }
 
@@ -118,68 +137,51 @@ public class XMLFragment extends Fragment {
                         checkBox.setText("checkbox");
                         checkBox.setId(View.generateViewId());
                         checkBox.setOnLongClickListener(longClickListener);
-                        linearLayout.addView(checkBox);
+                        layout.addView(checkBox);
                     } else if(dragView instanceof Button) {
                         Button button = new Button(getActivity());
                         button.setText("Button");
                         button.setId(View.generateViewId());
                         button.setOnLongClickListener(longClickListener);
-                        linearLayout.addView(button);
+                        layout.addView(button);
                     } else if(dragView instanceof ImageView) {
                         if(dragView.getTag().equals("editText")) {
                             EditText editText = new EditText(getActivity());
                             editText.setId(View.generateViewId());
                             editText.setOnLongClickListener(longClickListener);
-                            linearLayout.addView(editText);
+                            layout.addView(editText);
                         } else if(dragView.getTag().equals("checkBox")) {
                             CheckBox checkBox = new CheckBox(getActivity());
                             checkBox.setText("checkbox");
                             checkBox.setId(View.generateViewId());
                             checkBox.setOnLongClickListener(longClickListener);
-                            linearLayout.addView(checkBox);
+                            layout.addView(checkBox);
+                        } else if(dragView.getTag().equals("textView")) {
+                            TextView textView = new TextView(getActivity());
+                            textView.setText("Hello World");
+                            textView.setId(View.generateViewId());
+                            textView.setOnLongClickListener(longClickListener);
+                            layout.addView(textView);
+                        } else if(dragView.getTag().equals("button")) {
+                            Button button = new Button(getActivity());
+                            button.setText("Button");
+                            button.setId(View.generateViewId());
+                            button.setOnLongClickListener(longClickListener);
+                            layout.addView(button);
                         }
                     } else if(dragView instanceof EditText) {
                         EditText editText = new EditText(getActivity());
                         editText.setId(View.generateViewId());
                         editText.setOnLongClickListener(longClickListener);
-                        linearLayout.addView(editText);
+                        layout.addView(editText);
                     } else if(dragView instanceof TextView) {
                         TextView textView = new TextView(getActivity());
                         textView.setText("Hello World");
                         textView.setId(View.generateViewId());
                         textView.setOnLongClickListener(longClickListener);
-                        linearLayout.addView(textView);
+                        layout.addView(textView);
                     }
-                    /*String viewType = event.getClipData().getItemAt(0).getIntent().getStringExtra("viewType");
-                    //Log.i("ViewName", viewType);
-                    if(viewType.equalsIgnoreCase("textView")) {
-                        TextView textView = new TextView(getActivity());
-                        textView.setText("Hello World");
-                        textView.setTag("textView");
-                        textView.setId(View.generateViewId());
-                        textView.setOnLongClickListener(longClickListener);
 
-                        Log.i("ID OF TV", "" + textView.getId());
-                        linearLayout.addView(textView);
-                    } else if(viewType.equalsIgnoreCase("button")){
-                        Button button = new Button(getActivity());
-                        button.setText("Button");
-                        button.setTag("button");
-                        button.setId(View.generateViewId());
-                        button.setOnLongClickListener(longClickListener);
-                        linearLayout.addView(button);
-                    } else if(viewType.equalsIgnoreCase("editText")){
-                        EditText editText = new EditText(getActivity());
-                        editText.setTag("editText");
-                        editText.setId(View.generateViewId());
-                        editText.setOnLongClickListener(longClickListener);
-                        linearLayout.addView(editText);
-                    } else if(viewType.equalsIgnoreCase("checkBox")){
-                        CheckBox checkBox = new CheckBox(getActivity());
-                        checkBox.setText("checkbox");
-                        checkBox.setOnLongClickListener(longClickListener);
-                        linearLayout.addView(checkBox);
-                    }*/
                     break;
             }
             return true;
@@ -219,7 +221,7 @@ public class XMLFragment extends Fragment {
     }
 
     public void removeAllViews(){
-        linearLayout.removeAllViews();
+        layout.removeAllViews();
     }
 
     public void removeViews(int viewId){
@@ -229,6 +231,6 @@ public class XMLFragment extends Fragment {
         }
 
         View view = getActivity().findViewById(viewId);
-        linearLayout.removeView(view);
+        layout.removeView(view);
     }
 }

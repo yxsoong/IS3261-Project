@@ -25,16 +25,17 @@ public class LessonRecyclerAdapter extends RecyclerView.Adapter<LessonRecyclerAd
     private Class[] classes;
     private int arrowImage = R.drawable.chevron_right;
 
-    public LessonRecyclerAdapter(){
+    public LessonRecyclerAdapter() {
 
     }
 
-    public LessonRecyclerAdapter(String[] titles, String[] descriptions, int[] images, Class[] classes){
+    public LessonRecyclerAdapter(String[] titles, String[] descriptions, int[] images, Class[] classes) {
         this.titles = titles;
         this.descriptions = descriptions;
         this.images = images;
         this.classes = classes;
     }
+
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.lesson_card, parent, false);
@@ -45,9 +46,9 @@ public class LessonRecyclerAdapter extends RecyclerView.Adapter<LessonRecyclerAd
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        if(position == titles.length - 1){
-           CardView cardView = (CardView) holder.row.getParent();
-           cardView.setCardBackgroundColor(context.getColor(R.color.gold));
+        if (position == titles.length - 1) {
+            CardView cardView = (CardView) holder.row.getParent();
+            cardView.setCardBackgroundColor(context.getColor(R.color.gold));
         }
         holder.itemImage.setImageResource(images[position]);
         holder.itemTitle.setText(titles[position]);
@@ -60,16 +61,16 @@ public class LessonRecyclerAdapter extends RecyclerView.Adapter<LessonRecyclerAd
         return titles.length;
     }
 
-    class ViewHolder extends RecyclerView.ViewHolder{
+    class ViewHolder extends RecyclerView.ViewHolder {
         public int currentItem;
-        RelativeLayout row;
         public ImageView itemImage;
         public TextView itemTitle;
         public TextView itemDescription;
         public ImageView arrow;
+        RelativeLayout row;
 
 
-        public ViewHolder(View itemView){
+        public ViewHolder(View itemView) {
             super(itemView);
             row = itemView.findViewById(R.id.itemRow);
             itemImage = itemView.findViewById(R.id.itemImage);
@@ -79,26 +80,23 @@ public class LessonRecyclerAdapter extends RecyclerView.Adapter<LessonRecyclerAd
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 Intent myIntent;
+
                 @Override
                 public void onClick(View v) {
                     int position = getAdapterPosition();
 
-                    if(position == getItemCount() - 1){
+                    if (position == getItemCount() - 1) {
                         myIntent = new Intent(context, classes[position]);
                         context.startActivity(myIntent);
-                    } else{
-                        switch (position){
-                            case 0:
-                                myIntent = new Intent(context, classes[position]);
-                                context.startActivity(myIntent);
-                                break;
-                            case 1:
-                                myIntent = new Intent(context, classes[position]);
-                                context.startActivity(myIntent);
-                                break;
-                            default:
-                                Toast.makeText(context, "Working in progress.", Toast.LENGTH_LONG);
+                    } else {
+
+                        if (classes[position] == null) {
+                            Toast.makeText(context, "Work in progress.", Toast.LENGTH_SHORT).show();
+                            return;
                         }
+
+                        Intent myIntent = new Intent(context, classes[position]);
+                        context.startActivity(myIntent);
                     }
 
 

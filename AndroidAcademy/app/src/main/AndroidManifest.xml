@@ -19,9 +19,7 @@
         android:theme="@style/AppThemeLight">
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="portrait">
-
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Lesson1Activity"
             android:label="@string/lesson1"
@@ -82,13 +80,21 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity android:name=".RegisterActivity">
+        <activity
+            android:name=".RegisterActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".RelativeLayoutTryMeActivity"
+            android:label="Relative Layout"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".LessonInformationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.CustomTranslucent"/>
     </application>
 
 </manifest>

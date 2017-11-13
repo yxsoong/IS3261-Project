@@ -29,7 +29,7 @@ public class Lesson1Activity extends AppCompatActivity {
         String[] itemTitle = {"Introduction to Layouts", "Linear Layout", "Relative Layout", "List View", "Grid View", "Task"};
         String[] itemDescriptions = {"What layouts are and how to use them", "Step-by-step guide to using Linear Layouts", "Step-by-step guide to using Linear Layouts", "What ListView is and how to use it","What GridView is and how to use it","Practice makes perfect"};
         int[] images = {R.drawable.information_outline, R.drawable.reorder_vertical, R.drawable.trello, R.drawable.server, R.drawable.view_grid, R.drawable.code_not_equal_variant};
-        Class[] classes = {LayoutIntroduction.class, LinearLayoutTryMeActivity.class, null, null, null, Lesson1TaskActivity.class};
+        Class[] classes = {LayoutIntroduction.class, LinearLayoutTryMeActivity.class, RelativeLayoutTryMeActivity.class, null, null, Lesson1TaskActivity.class};
 
         adapter = new LessonRecyclerAdapter(itemTitle,itemDescriptions,images,classes);
         DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(recyclerView.getContext(),

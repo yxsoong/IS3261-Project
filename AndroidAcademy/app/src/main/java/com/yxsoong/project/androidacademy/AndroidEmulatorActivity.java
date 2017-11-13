@@ -2,6 +2,7 @@ package com.yxsoong.project.androidacademy;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -9,7 +10,17 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class AndroidEmulatorActivity extends AppCompatActivity {
+    public static final String PAGES_VIEW_KEY = "pagesViewed";
+    public static final String PROGRESS_KEY = "progress";
+    public static final String ANDROID_ACADEMY_SHAREDPREF = "androidAcademySharedPref1";
+
+    int progress;
+    Set<String> pagesVisited;
+    SharedPreferences prefs;
 
     private SectionsPagerAdapter mSectionsPagerAdapter;
 
@@ -25,6 +36,10 @@ public class AndroidEmulatorActivity extends AppCompatActivity {
         // Set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
+
+        prefs = getSharedPreferences(ANDROID_ACADEMY_SHAREDPREF, MODE_PRIVATE);
+        progress = prefs.getInt(PROGRESS_KEY, 0);
+        pagesVisited = prefs.getStringSet(PAGES_VIEW_KEY, new HashSet<String>());
 
 //        ActionBar actionBar = getActionBar();
         ActionBar actionBar = getSupportActionBar();
@@ -56,6 +71,15 @@ public class AndroidEmulatorActivity extends AppCompatActivity {
                     return tab3;
                 case 3:
                     AndroidEmulatorTab4 tab4 = new AndroidEmulatorTab4();
+
+                    if(!pagesVisited.contains("AndroidEmulator")){
+                        pagesVisited.add("AndroidEmulator");
+                        SharedPreferences.Editor editor = getSharedPreferences(ANDROID_ACADEMY_SHAREDPREF, MODE_PRIVATE).edit();
+                        editor.putStringSet(PAGES_VIEW_KEY, pagesVisited);
+                        progress+=2;
+                        editor.putInt(PROGRESS_KEY, progress);
+                        editor.commit();
+                    }
                     return tab4;
                 default:
                     return null;

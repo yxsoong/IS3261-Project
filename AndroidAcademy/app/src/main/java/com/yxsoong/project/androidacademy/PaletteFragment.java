@@ -7,9 +7,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 
 /**
@@ -32,13 +30,15 @@ public class PaletteFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_palette, container, false);
-        TextView textView = view.findViewById(R.id.textViewPaletteTV);
-        Button button = view.findViewById(R.id.buttonPaletteBtn);
+        //TextView textView = view.findViewById(R.id.textViewPaletteTV);
+        ImageView textViewIV = view.findViewById(R.id.textViewPaletteIV);
+        //Button button = view.findViewById(R.id.buttonPaletteBtn);
+        ImageView buttonIV = view.findViewById(R.id.buttonPaletteIV);
         ImageView editTextIV = view.findViewById(R.id.editTextPaletteIV);
         ImageView checkBoxIV = view.findViewById(R.id.checkBoxPaletteIV);
 
-        textView.setOnLongClickListener(longClickListener);
-        button.setOnLongClickListener(longClickListener);
+        textViewIV.setOnLongClickListener(longClickListener);
+        buttonIV.setOnLongClickListener(longClickListener);
         editTextIV.setOnLongClickListener(longClickListener);
         checkBoxIV.setOnLongClickListener(longClickListener);
 //        setLongClick(textView);
