@@ -58,6 +58,7 @@
         <activity
             android:name=".GettingStartedTaskActivity"
             android:label="@string/task"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:screenOrientation="portrait" />
         <activity
             android:name=".LayoutIntroduction"
@@ -69,6 +70,7 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".Lesson1TaskActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:label="@string/task"
             android:screenOrientation="portrait" />
         <activity
