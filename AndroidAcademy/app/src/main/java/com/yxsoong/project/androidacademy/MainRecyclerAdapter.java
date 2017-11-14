@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * Created by User on 12/11/2017.
@@ -73,8 +74,10 @@ public class MainRecyclerAdapter extends RecyclerView.Adapter<MainRecyclerAdapte
                             break;
                         case 1:
                             myIntent = new Intent(context, Lesson1Activity.class);
-                            context.startActivity(myIntent);
+                            ((Activity)context).startActivityForResult(myIntent, REQUEST_CODE);
                             break;
+                        default:
+                            Toast.makeText(context, "Work in progress.", Toast.LENGTH_SHORT).show();
                     }
 
                 }
