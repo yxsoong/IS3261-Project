@@ -1,10 +1,11 @@
 package com.yxsoong.project.androidacademy;
 
-import android.support.v7.app.ActionBar;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.DragEvent;
 import android.view.Menu;
@@ -16,6 +17,9 @@ public class LinearLayoutTryMeActivity extends AppCompatActivity implements XMLF
     private static String ORIENTAION_KEY = "orientation";
     private static String LAYOUT_KEY = "layoutType";
     Fragment verticalFragment, horizontalFragment, paletteFragment;
+
+    public static final String ANDROID_ACADEMY_SHAREDPREF = "androidAcademySharedPref1";
+    public static final String VIEW_INFO_KEY = "viewInfoPage";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,8 +58,19 @@ public class LinearLayoutTryMeActivity extends AppCompatActivity implements XMLF
 
         View layoutView = findViewById(R.id.linearLayoutContainer);
         layoutView.setOnDragListener(dragListener);
+        SharedPreferences prefs = getSharedPreferences(ANDROID_ACADEMY_SHAREDPREF, MODE_PRIVATE);
+        boolean hasViewed = prefs.getBoolean(VIEW_INFO_KEY, true);
+
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
+
+        if(!hasViewed){
+            Intent myIntent = new Intent(getApplicationContext(), LessonInformationActivity.class);
+            startActivity(myIntent);
+            SharedPreferences.Editor editor = prefs.edit();
+            editor.putBoolean(VIEW_INFO_KEY, true);
+            editor.commit();
+        }
     }
 
     @Override

@@ -20,6 +20,7 @@ public class RegisterActivity extends AppCompatActivity{
     public static final String PROGRESS_KEY = "progress";
     public static final String PAGES_VIEW_KEY = "pagesViewed";
     public static final String ANDROID_ACADEMY_SHAREDPREF = "androidAcademySharedPref1";
+    public static final String VIEW_INFO_KEY = "viewInfoPage";
 
     EditText editText;
     Button button;
@@ -92,6 +93,7 @@ public class RegisterActivity extends AppCompatActivity{
 
                     editor.putString(USER_KEY, name);
                     editor.putInt(PROGRESS_KEY, 0);
+                    editor.putBoolean(VIEW_INFO_KEY, false);
                     Set<String> stringSet = new HashSet<String>();
                     editor.putStringSet(PAGES_VIEW_KEY, stringSet);
                     editor.commit();

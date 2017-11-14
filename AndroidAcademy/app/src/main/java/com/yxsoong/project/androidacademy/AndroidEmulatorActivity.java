@@ -22,6 +22,12 @@ public class AndroidEmulatorActivity extends AppCompatActivity {
     Set<String> pagesVisited;
     SharedPreferences prefs;
 
+    AndroidEmulatorTab1 tab1;
+    AndroidEmulatorTab2 tab2;
+    AndroidEmulatorTab3 tab3;
+    AndroidEmulatorTab4 tab4;
+
+
     private SectionsPagerAdapter mSectionsPagerAdapter;
 
     private ViewPager mViewPager;
@@ -36,6 +42,7 @@ public class AndroidEmulatorActivity extends AppCompatActivity {
         // Set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
+        mViewPager.setOffscreenPageLimit(4);
 
         prefs = getSharedPreferences(ANDROID_ACADEMY_SHAREDPREF, MODE_PRIVATE);
         progress = prefs.getInt(PROGRESS_KEY, 0);
@@ -51,6 +58,15 @@ public class AndroidEmulatorActivity extends AppCompatActivity {
         return true;
     }
 
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        getFragmentManager().putFragment(outState, "tab1", tab1);
+        getFragmentManager().putFragment(outState, "tab2", tab2);
+        getFragmentManager().putFragment(outState, "tab3", tab3);
+        getFragmentManager().putFragment(outState, "tab4", tab4);
+    }
+
     public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
         public SectionsPagerAdapter(FragmentManager fm) {
@@ -61,16 +77,16 @@ public class AndroidEmulatorActivity extends AppCompatActivity {
         public Fragment getItem(int position) {
             switch (position) {
                 case 0:
-                    AndroidEmulatorTab1 tab1 = new AndroidEmulatorTab1();
+                    tab1 = new AndroidEmulatorTab1();
                     return tab1;
                 case 1:
-                    AndroidEmulatorTab2 tab2 = new AndroidEmulatorTab2();
+                    tab2 = new AndroidEmulatorTab2();
                     return tab2;
                 case 2:
-                    AndroidEmulatorTab3 tab3 = new AndroidEmulatorTab3();
+                    tab3 = new AndroidEmulatorTab3();
                     return tab3;
                 case 3:
-                    AndroidEmulatorTab4 tab4 = new AndroidEmulatorTab4();
+                    tab4 = new AndroidEmulatorTab4();
 
                     if(!pagesVisited.contains("AndroidEmulator")){
                         pagesVisited.add("AndroidEmulator");
