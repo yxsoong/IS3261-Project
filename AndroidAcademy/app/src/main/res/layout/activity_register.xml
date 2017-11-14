@@ -37,11 +37,12 @@
         android:id="@+id/editText1"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:hint="Enter your name to begin"
+        android:layout_below="@id/iconIV"
         android:layout_centerInParent="true"
-        android:textColorHint="@color/white"
-        android:layout_below="@id/iconIV"/>
+        android:hint="Enter your name to begin"
+        android:inputType="text|textCapSentences"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
 
     <Button
         android:id="@+id/button1"
