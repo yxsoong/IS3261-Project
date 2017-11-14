@@ -4,6 +4,7 @@ package com.yxsoong.project.androidacademy;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentTransaction;
@@ -13,8 +14,18 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class Lesson1TaskActivity extends AppCompatActivity implements ActionBar.TabListener {
 
+    public static final String PAGES_VIEW_KEY = "pagesViewed";
+    public static final String PROGRESS_KEY = "progress";
+    public static final String ANDROID_ACADEMY_SHAREDPREF = "androidAcademySharedPref1";
+
+    int progress;
+    Set<String> pagesVisited;
+    SharedPreferences prefs;
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
      * fragments for each of the sections. We use a
@@ -36,6 +47,9 @@ public class Lesson1TaskActivity extends AppCompatActivity implements ActionBar.
         setContentView(R.layout.activity_lesson1_task);
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
+        prefs = getSharedPreferences(ANDROID_ACADEMY_SHAREDPREF, MODE_PRIVATE);
+        progress = prefs.getInt(PROGRESS_KEY, 0);
+        pagesVisited = prefs.getStringSet(PAGES_VIEW_KEY, new HashSet<String>());
         mSectionsPagerAdapter = new SectionsPagerAdapter(getFragmentManager());
 
         // Set up the ViewPager with the sections adapter.
@@ -92,6 +106,14 @@ public class Lesson1TaskActivity extends AppCompatActivity implements ActionBar.
             Intent myIntent = new Intent(getApplicationContext(), TaskAnswerActivity.class);
             myIntent.putExtra(URLKEY, "https://raw.githubusercontent.com/yxsoong/IS3261-Project/master/AndroidAcademy/app/src/main/res/layout/fragment_lesson1_task_example.xml");
             startActivity(myIntent);
+            if(!pagesVisited.contains("Lesson1Answer")){
+                pagesVisited.add("Lesson1Answer");
+                SharedPreferences.Editor editor = getSharedPreferences(ANDROID_ACADEMY_SHAREDPREF, MODE_PRIVATE).edit();
+                editor.putStringSet(PAGES_VIEW_KEY, pagesVisited);
+                progress+=5;
+                editor.putInt(PROGRESS_KEY, progress);
+                editor.commit();
+            }
             return true;
         } else if(id == android.R.id.home){
             finish();
